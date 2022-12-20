@@ -1,0 +1,60 @@
+[
+    {
+        "question": " $P(X\\leq 623.14) = P(X \\geq 809.14)$",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "FALSE",
+                "correct": false,
+                "feedback": ""
+            }
+        ]
+    },
+    {
+        "question": "$P(X\\leq 762.64) = P(X \\leq 669.64) $",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "FALSE",
+                "correct": true,
+                "feedback": "Correct! "
+            }
+        ]
+    },
+    {
+        "question": "What is the probability that the ultimate tensile strengths are in the range 700 MPa - 750 MPa? Please round the answer to four decimal places.",
+        "type": "numeric",
+        "precision": 4,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.4025,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    },
+    {
+        "question": "What is the probability that a steel rebar sample picked at random has a ultimate tensile strength of 800 or more? Please round the answer to four decimal places.",
+        "type": "numeric",
+        "precision": 4,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.0357,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    }
+]

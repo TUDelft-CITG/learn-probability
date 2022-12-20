@@ -1,0 +1,28 @@
+[
+    {
+        "question": "What is the value of $\\lambda_A$?",
+        "type": "numeric",
+        "precision": 1,
+        "answers": [
+            {
+                "type": "value",
+                "value": 2,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    },
+    {
+        "question": "What is the value of $\\lambda_B$?",
+        "type": "numeric",
+        "precision": 1,
+        "answers": [
+            {
+                "type": "value",
+                "value": 8,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    }
+]

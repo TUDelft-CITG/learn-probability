@@ -1,0 +1,62 @@
+[
+    {
+        "question": "What is the correct plot that describes the probability mass function of the number of international master's students?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "a)",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "b)",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "c)",
+                "correct": false,
+                "feedback": ""
+            }
+        ]
+    },
+    {
+        "question": "What is the probability that the WIM system will measure the first heavy vehicle with a GWV>50 in exactly 3 months? Please round the answer to three decimal places.",
+        "type": "numeric",
+        "precision": 3,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.093,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    },
+    {
+        "question": "What is the probability that the WIM system will measure the first heavy vehicle with a GWV>50 in 4 months or less?  Please round the answer to three decimal places.",
+        "type": "numeric",
+        "precision": 3,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.400,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    },
+    {
+        "question": "What is the probability that the WIM system will measure the first heavy vehicle with a GWV>50 in 6 months or more?  Please round the answer to three decimal places.",
+        "type": "numeric",
+        "precision": 3,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.528,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    }
+]

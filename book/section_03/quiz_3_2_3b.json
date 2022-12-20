@@ -1,0 +1,66 @@
+[
+    {
+        "question": " $P(X_B\\leq 0.25) \\approx P(X_A\\leq 0.25)$",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "FALSE",
+                "correct": true,
+                "feedback": "Correct!, in fact $P(X_B\\leq 0.25) > P(X_A\\leq 0.25)$ "
+            }
+        ]
+    },
+    {
+        "question": "In country A it is more likely that the time between 2 subsequent earthquakes is very short.",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "FALSE",
+                "correct": true,
+                "feedback": "Correct!, in country A it is less likely that the time between 2 subsequent earthquakes is very short, the pdf of $A$ is below the one of $B$ for small time intervals. "
+            }
+        ]
+    },
+    {
+        "question": "For large $t$ we have that $P(X_A \\geq t) > P(X_B \\geq t)$",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "Correct!, for large $t$ we have that $P(A\\geq t)$ > $P(B\\geq t)$ (here the pdf of $A$ is above that of $B$)"
+            },
+            {
+                "answer": "FALSE",
+                "correct": false,
+                "feedback": ""
+            }
+        ]
+    },
+    {
+        "question": "The parameter $\\lambda_i$ ($i=A,B$) is equal to the average time interval between 2 subsequent earthquakes",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "FALSE",
+                "correct": true,
+                "feedback": "Correct!, it is $1/\\lambda_i$ being equal to the average time interval between 2 subsequent earthquakes"
+            }
+        ]
+    }
+]

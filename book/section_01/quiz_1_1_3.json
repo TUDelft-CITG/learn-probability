@@ -1,0 +1,23 @@
+[
+    {
+        "question": "Why are they also mutually exclusive?. Choose the correct statement:",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "Because Robert says so, and Robert is always right",
+                "correct": false,
+                "feedback": "This is DEFINITELY not correct!."
+            },
+            {
+                "answer": "If an earthquake occurs during the year ($A$), then an earthquake not occurring is impossible ($\\bar{A}$)",
+                "correct": true,
+                "feedback": "This is true, but it's not the only correct statement."
+            },
+            {
+                "answer": "If an earthquake doesn't happen during the year ($\\bar{A}$) then it hasn't happened ($A$)!",
+                "correct": true,
+                "feedback": "Correct!."
+            }
+        ]
+    }
+]

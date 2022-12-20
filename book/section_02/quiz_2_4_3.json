@@ -1,0 +1,62 @@
+[
+    {
+        "question": "What is the correct plot that describes the probability mass function of hurricane counts per year?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "a)",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "b)",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "c)",
+                "correct": false,
+                "feedback": ""
+            }
+        ]
+    },
+    {
+        "question": "What is the probability of three hurricanes occurring in one year? Please round the answer to three decimal places.",
+        "type": "numeric",
+        "precision": 3,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.037,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    },
+    {
+        "question": "What is the probability of at most three hurricanes occurring in one year? Please round the answer to three decimal places.",
+        "type": "numeric",
+        "precision": 3,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.055,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    },
+    {
+        "question": "What is the probability of more than eight hurricanes occurring in one year? Please round the answer to three decimal places.",
+        "type": "numeric",
+        "precision": 3,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.352,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    }
+]

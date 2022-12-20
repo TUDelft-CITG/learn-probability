@@ -1,0 +1,23 @@
+[
+    {
+        "question": "What does the black shaded area in the above figure correspond to?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The intersection of $\\bar{A}$ and $\\bar{B}$",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "The union of $\\bar{A}$ and $\\bar{B}$",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "None of the above",
+                "correct": true,
+                "feedback": "Correct!."
+            }
+        ]
+    }
+]

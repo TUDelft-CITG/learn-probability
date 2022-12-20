@@ -1,0 +1,34 @@
+[
+    {
+        "question": "The Bernoulli distribution is used when there are three outcomes of a trial",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "FLASE",
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    },
+    {
+        "question": "$P(\\mathrm{fail}) = 1-P(\\mathrm{success})$",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "FLASE",
+                "correct": false,
+                "feedback": ""
+            }
+        ]
+    }
+]
