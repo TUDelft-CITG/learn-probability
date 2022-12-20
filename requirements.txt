@@ -1,10 +1,5 @@
-ipython
-jupyter-book
+jupyterquiz
+scipy
 numpy
 matplotlib
-scipy
-pandas
-jupyterquiz
-pytest
-seaborn
-sympy
+ipython
