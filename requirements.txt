@@ -1,3 +1,4 @@
+jupyterbook
 jupyterquiz
 scipy
 numpy
