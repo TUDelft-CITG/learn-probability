@@ -1,0 +1,34 @@
+[
+    {
+        "question": "Is this collectively exhaustive?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "Correct!."
+            },
+            {
+                "answer": "FALSE",
+                "correct": false,
+                "feedback": " "
+            }
+        ]
+    },
+    {
+        "question": "Are these events mutually exclusive?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "FALSE",
+                "correct": true,
+                "feedback": "Correct!. These events are not mutually exclusive! Damage can be caused by many things other than a typhoon. Alternatively, a typhon can occur but might not cause damage. Both situations imply that within the sample space the area of $A$ and $B$ overlap (typhoon and damage occurs) but there is also a region within the area for both events that does not overlap (typhoon without damage, or damage without typhoon)."
+            }
+        ]
+    }
+]

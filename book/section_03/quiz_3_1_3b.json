@@ -1,0 +1,34 @@
+[
+    {
+        "question": " $P(x \\leq E[X]) = 1-P(x > E[X] )$",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "Correct!."
+            },
+            {
+                "answer": "FALSE",
+                "correct": false,
+                "feedback": " "
+            }
+        ]
+    },
+    {
+        "question": "$P(x \\leq 12.8) = 0$",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "Correct!."
+            },
+            {
+                "answer": "FALSE",
+                "correct": false,
+                "feedback": " "
+            }
+        ]
+    }
+]

@@ -1,0 +1,55 @@
+[
+    {
+        "question": "which event are we interested in? Each solar panel working is an event ($S_i$ where $i=1, 2,..., 16$)",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "The union of the events $S_i$ ",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "The intersection of the events $S_i$",
+                "correct": true,
+                "feedback": "Correct!."
+            },
+            {
+                "answer": "Not enough information is provided",
+                "correct": false,
+                "feedback": ""
+            }
+        ]
+    },
+    {
+        "question": "The probability of the union is greater than the intersection",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "That's right! Since the union will always be greater than the intersection because it includes the possibility of one event occuring but not another."
+            },
+            {
+                "answer": "FALSE",
+                "correct": false,
+                "feedback": " "
+            }
+        ]
+    },
+    {
+        "question": "The probability of the intersection is greater than the union",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "FALSE",
+                "correct": true,
+                "feedback": "Correct!."
+            }
+        ]
+    }
+]

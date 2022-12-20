@@ -1,0 +1,23 @@
+[
+    {
+        "question": "What is the correct plot that describes the probability mass function of the number of international master's students?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "a)",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "b)",
+                "correct": false,
+                "feedback": ""
+            },
+            {
+                "answer": "c)",
+                "correct": false,
+                "feedback": ""
+            }
+        ]
+    }
+]

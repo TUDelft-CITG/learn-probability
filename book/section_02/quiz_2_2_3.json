@@ -1,0 +1,41 @@
+[
+    {
+        "question": "What is the probability that non of the bridges are structurally deficient? ",
+        "type": "numeric",
+        "precision": 4,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.2103,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    },
+    {
+        "question": "What is the probability that exactly 3 bridges are structurally deficient?",
+        "type": "numeric",
+        "precision": 4,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.1278,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    },
+    {
+        "question": "What is the probability that at least 3 bridges are structurally deficient? ",
+        "type": "numeric",
+        "precision": 4,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.1860,
+                "correct": true,
+                "feedback": "Correct."
+            }
+        ]
+    }
+]

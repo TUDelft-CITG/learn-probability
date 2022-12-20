@@ -1,0 +1,54 @@
+[
+    {
+        "question": "How is the probability of event $B$ related to the probability of event $A$?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Bigger",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "Smaller",
+                "correct": true,
+                "feedback": "Correct."
+            },
+            {
+                "answer": "Same",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "Not enough information",
+                "correct": false,
+                "feedback": "False."
+            }
+        ]
+    },
+    {
+        "question": "Which of the following statements is true about $A$, $B$ and the sample space?",
+        "type": "many_choice",
+        "answers": [
+            {
+                "answer": "If event $A$ happens, event $B$ cannot happen",
+                "correct": true,
+                "feedback": "Correct! but it's not the only correct answer. As we just discussed, it is because there is no overlap. The events are mutually exclusive."
+            },
+            {
+                "answer": "If event $B$ happens, event $A$ cannot happen",
+                "correct": true,
+                "feedback": "Correct! but it's not the only correct answer. As we just discussed, it is because there is no overlap. The events are mutually exclusive."
+            },
+            {
+                "answer": "There is a chance that nothing happens",
+                "correct": true,
+                "feedback": "Correct! This is represented by the blank space, which can be quantified as $1-P(A)-P(B)$. In this case it is not labeled, but we could have also called event $C$ the event that neither  $A$ or $B$ happens, and they would all three be mutually exclusive."
+            },
+            {
+                "answer": "The probability of A or B occurring is less than 1.0",
+                "correct": true,
+                "feedback": "Correct! We know this because the two boxes together are smaller than the sample space. But we also know this from the axioms of probability -if you calculate a probability greater than 1 or less than 0, you made a mistake!"
+            }
+        ]
+    }
+]

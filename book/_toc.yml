@@ -1,0 +1,23 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+root: index.md
+format: jb-book
+
+parts:
+- caption: Section 1. General probability concepts
+  chapters:
+  - file: section_01/Must_know_ probability_concepts
+  - file: section_01/Total_Probability_Theorem
+
+- caption: Section 2. Discrete random variables
+  chapters:
+  - file: section_02/2_1_Bernoulli_dist
+  - file: section_02/2_2_Binomial_dist
+  - file: section_02/2_3_Geometric_dist
+  - file: section_02/2_4_Poisson_dist
+
+- caption: Section 3. Continuous random variables
+  chapters:
+  - file: section_03/3_1_Uniform_dist
+  - file: section_03/3_2_Exponential_dist
+  - file: section_03/3_3_Normal_dist
