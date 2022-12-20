@@ -1,0 +1,10 @@
+ipython
+jupyter-book
+numpy
+matplotlib
+scipy
+pandas
+jupyterquiz
+pytest
+seaborn
+sympy
