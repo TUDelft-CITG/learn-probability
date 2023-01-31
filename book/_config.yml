@@ -1,8 +1,8 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: Probability and statistics applications for MUDE
-author: The Jupyter Book Community
+title: Probability and Statistics Applications for Civil Engineers
+author: Robert Lanzafame, Miguel Mendoza Lugo and Patricia Mares Nasarre
 logo: logo_excedance.png
 
 # Force re-execution of notebooks on each build.
