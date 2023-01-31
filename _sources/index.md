@@ -2,9 +2,9 @@
 
 Welcome to **Probability and Statistics Applications for Civil Engineers**. We're excited to have you join us in this self-paced online course, which is designed to bridge the gap between introductory and more advanced courses in probability and statistics.
 
-```{admonition} The label "Civil Engineering" is an oversimplification!
+```{admonition} The label "Civil Engineering" is an over-simplification!
 :class: dropdown
-The field of civil engineering has changed significantly since over the past decades. While we wish we could have included titles such as "environmental engineering," "construction management," "engineering geology" or similar fields, please forgive us for adopting the label "civil engineering" for the sake of simplicity.
+The field of civil engineering has changed significantly over the past decades. While we wish we could have included titles such as "environmental engineering," "construction management," "engineering geology" or similar fields, please forgive us for adopting the label "civil engineering" for the sake of simplicity.
 ```
 
 This course was originally designed for incoming students to several MSc programs at TU Delft: especially those who have never taken a university-level course on probability and statistics concepts, but also those who may need to brush up on these concepts. Have you had trouble in the past due to the theoretical or math-oriented nature of these problems? Then this course is for you!
