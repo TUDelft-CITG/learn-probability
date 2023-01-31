@@ -111,7 +111,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and statistics applications for Modelling, Uncertainty, Data for Engineers (MUDE)
+                    Probability and Statistics Applications for Civil Engineers
                 </a>
             </li>
         </ul>
@@ -444,14 +444,14 @@ title="Print to PDF"
 <p>To answer this question we can use the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from scipy.special import comb #import scipy.special library to use the combination function
-p = 0.02
-n = 50
-x = 1
-probability  = comb(n,x)*(p**x)*(1-p)**(n-x)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">comb</span> <span class="c1">#import scipy.special library to use the combination function</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mf">0.02</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">probability</span>  <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="o">**</span><span class="n">x</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">x</span><span class="p">)</span>
 
-#display the result rounded to three decimal places
-print(f&#39;The probability is {probability:.3f}&#39;) 
+<span class="c1">#display the result rounded to three decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The probability is </span><span class="si">{</span><span class="n">probability</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -468,14 +468,14 @@ Similarly that question 1. We’re asked to solve for twice in 50 years. Therefo
 <p>To answer this question we can use the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from scipy.special import comb #import scipy.special library to use the combination function
-p = 0.02
-n = 50
-x = 2
-probability  = comb(n,x)*(p**x)*(1-p)**(n-x)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">comb</span> <span class="c1">#import scipy.special library to use the combination function</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mf">0.02</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">probability</span>  <span class="o">=</span> <span class="n">comb</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="o">**</span><span class="n">x</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">x</span><span class="p">)</span>
 
-#display the result rounded to three decimal places
-print(f&#39;The probability is {probability:.3f}&#39;) 
+<span class="c1">#display the result rounded to three decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The probability is </span><span class="si">{</span><span class="n">probability</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -493,14 +493,14 @@ print(f&#39;The probability is {probability:.3f}&#39;)
 <p>To answer this question we can use the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from scipy.special import comb #import scipy.special library to use the combination function
-p = 0.02
-n = 50
-x = 0
-probability  = 1 - comb(n,x)*(p**x)*(1-p)**(n-x)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">comb</span> <span class="c1">#import scipy.special library to use the combination function</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mf">0.02</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">probability</span>  <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">comb</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="o">**</span><span class="n">x</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">x</span><span class="p">)</span>
 
-#display the result rounded to three decimal places
-print(f&#39;The probability is {probability:.3f}&#39;) 
+<span class="c1">#display the result rounded to three decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The probability is </span><span class="si">{</span><span class="n">probability</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -517,16 +517,16 @@ print(f&#39;The probability is {probability:.3f}&#39;)
 <p>To answer this question we can use the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from scipy.special import comb #import scipy.special library to use the combination function
-p = 0.02
-n = 50
-x1 = 0 
-x2 = 1 
-probability = 1 - ( comb(n,x1)*(p**x1)*(1-p)**(n-x1) 
-            + comb(n,x2)*(p**x2)*(1-p)**(n-x2) )
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.special</span> <span class="kn">import</span> <span class="n">comb</span> <span class="c1">#import scipy.special library to use the combination function</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mf">0.02</span>
+<span class="n">n</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="n">x2</span> <span class="o">=</span> <span class="mi">1</span> 
+<span class="n">probability</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="p">(</span> <span class="n">comb</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="o">**</span><span class="n">x1</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">x1</span><span class="p">)</span> 
+            <span class="o">+</span> <span class="n">comb</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">x2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">p</span><span class="o">**</span><span class="n">x2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="p">)</span><span class="o">**</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">x2</span><span class="p">)</span> <span class="p">)</span>
 
-#display the result rounded to three decimal places
-print(f&#39;The probability is {probability:.3f}&#39;) 
+<span class="c1">#display the result rounded to three decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The probability is </span><span class="si">{</span><span class="n">probability</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>

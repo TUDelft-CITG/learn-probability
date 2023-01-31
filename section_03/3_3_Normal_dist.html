@@ -110,7 +110,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and statistics applications for Modelling, Uncertainty, Data for Engineers (MUDE)
+                    Probability and Statistics Applications for Civil Engineers
                 </a>
             </li>
         </ul>
@@ -446,14 +446,14 @@ title="Print to PDF"
 <p>We can easily obtain the solution using the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from scipy.stats import norm            #import normal function
-p = 45/50
-mu = 16
-sigma = 2
-water_content = norm.ppf(1-p,mu,sigma)  #norm.ppf is th percent point function (inverse of CDF).
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>            <span class="c1">#import normal function</span>
+<span class="n">p</span> <span class="o">=</span> <span class="mi">45</span><span class="o">/</span><span class="mi">50</span>
+<span class="n">mu</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">water_content</span> <span class="o">=</span> <span class="n">norm</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">p</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">sigma</span><span class="p">)</span>  <span class="c1">#norm.ppf is th percent point function (inverse of CDF).</span>
 
-#display the result rounded to two decimal places
-print(f&#39;The water content is exceeded in 45 tests out of 50 is {water_content:.2f} %&#39;) 
+<span class="c1">#display the result rounded to two decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The water content is exceeded in 45 tests out of 50 is </span><span class="si">{</span><span class="n">water_content</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> %&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -471,14 +471,14 @@ print(f&#39;The water content is exceeded in 45 tests out of 50 is {water_conten
 <p>We can easily obtain the solution using the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from scipy.stats import norm           #import normal function
-mu = 16
-sigma = 2
-water_content = 15
-probability  =  norm.cdf(water_content,mu,sigma) #norm.cdf is the CDF of the normal distribution
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>           <span class="c1">#import normal function</span>
+<span class="n">mu</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">water_content</span> <span class="o">=</span> <span class="mi">15</span>
+<span class="n">probability</span>  <span class="o">=</span>  <span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">water_content</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">sigma</span><span class="p">)</span> <span class="c1">#norm.cdf is the CDF of the normal distribution</span>
 
-#display the result rounded to three decimal places
-print(f&#39;The probability that a clay sample picked at random has 15% of water content or less is  {probability:.3f}&#39;) 
+<span class="c1">#display the result rounded to three decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The probability that a clay sample picked at random has 15% of water content or less is  </span><span class="si">{</span><span class="n">probability</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -492,14 +492,14 @@ print(f&#39;The probability that a clay sample picked at random has 15% of water
 <p>We can easily obtain the solution using the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from scipy.stats import norm           #import normal function
-mu = 16
-sigma = 2
-water_content = 18
-probability  =  1 - norm.cdf(water_content,mu,sigma) #norm.cdf is the CDF of the normal distribution
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>           <span class="c1">#import normal function</span>
+<span class="n">mu</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">water_content</span> <span class="o">=</span> <span class="mi">18</span>
+<span class="n">probability</span>  <span class="o">=</span>  <span class="mi">1</span> <span class="o">-</span> <span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">water_content</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">sigma</span><span class="p">)</span> <span class="c1">#norm.cdf is the CDF of the normal distribution</span>
 
-#display the result rounded to three decimal places
-print(f&#39;The probability that a clay sample picked at random has more than 18% of water content is {probability:.3f}&#39;) 
+<span class="c1">#display the result rounded to three decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The probability that a clay sample picked at random has more than 18% of water content is </span><span class="si">{</span><span class="n">probability</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -515,15 +515,15 @@ print(f&#39;The probability that a clay sample picked at random has more than 18
 <p>By using the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>from scipy.stats import norm  #import normal function
-mu = 16
-sigma = 2
-water_content_i = 15.5
-water_content_j = 17.7
-probability  =  norm.cdf(water_content_j,mu,sigma) - norm.cdf(water_content_i,mu,sigma)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>  <span class="c1">#import normal function</span>
+<span class="n">mu</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="n">sigma</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">water_content_i</span> <span class="o">=</span> <span class="mf">15.5</span>
+<span class="n">water_content_j</span> <span class="o">=</span> <span class="mf">17.7</span>
+<span class="n">probability</span>  <span class="o">=</span>  <span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">water_content_j</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">sigma</span><span class="p">)</span> <span class="o">-</span> <span class="n">norm</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="n">water_content_i</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">sigma</span><span class="p">)</span>
 
-#display the result rounded to three decimal places
-print(f&#39;The probability that the water contents are in the range 15.5% -  17.5% is {probability:.3f}&#39;) 
+<span class="c1">#display the result rounded to three decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The probability that the water contents are in the range 15.5% -  17.5% is </span><span class="si">{</span><span class="n">probability</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>

@@ -111,7 +111,7 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and statistics applications for Modelling, Uncertainty, Data for Engineers (MUDE)
+                    Probability and Statistics Applications for Civil Engineers
                 </a>
             </li>
         </ul>
@@ -442,22 +442,22 @@ title="Print to PDF"
 <p>The plot of the PDF can be generated with the following script</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import numpy as np #import numpy library to use exponential function
-import matplotlib.pyplot as plt #matplotlib is a library for creating visualizations in Python
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1">#import numpy library to use exponential function</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1">#matplotlib is a library for creating visualizations in Python</span>
 
-Lambda = 1/10
+<span class="n">Lambda</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">10</span>
 
-plt.rcParams.update({&#39;font.size&#39;:16})   # minimum font size is 16
-plt.figure(figsize=(8,4))               # the figure size is 8 inches x 4 inches
-x = np.arange(0,40)                     # Array of evenly spaced values
-#plot of the pdf 
-plt.plot(x,Lambda*np.exp(-Lambda*x), 
-        label = f&#39;$\lambda e^{{- \lambda x}}$, $\lambda$ = {Lambda}&#39;) #label adds a legend in the plot
-plt.xlabel(&#39;Years&#39;)                     #label of the x axis
-plt.ylabel(&#39;f(x)&#39;)                      #label of the y axis
-plt.xlim([0,40])                        #limit of the x axis
-plt.legend()                            #place the legend on the plot
-plt.grid(&#39;--&#39;,which=&#39;both&#39;,color=&#39;gray&#39;,alpha=.2)  #configure the grid lines
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;font.size&#39;</span><span class="p">:</span><span class="mi">16</span><span class="p">})</span>   <span class="c1"># minimum font size is 16</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">))</span>               <span class="c1"># the figure size is 8 inches x 4 inches</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">40</span><span class="p">)</span>                     <span class="c1"># Array of evenly spaced values</span>
+<span class="c1">#plot of the pdf </span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">Lambda</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">Lambda</span><span class="o">*</span><span class="n">x</span><span class="p">),</span> 
+        <span class="n">label</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;$\lambda e^</span><span class="se">{{</span><span class="s1">- \lambda x</span><span class="se">}}</span><span class="s1">$, $\lambda$ = </span><span class="si">{</span><span class="n">Lambda</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> <span class="c1">#label adds a legend in the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;Years&#39;</span><span class="p">)</span>                     <span class="c1">#label of the x axis</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;f(x)&#39;</span><span class="p">)</span>                      <span class="c1">#label of the y axis</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlim</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="mi">40</span><span class="p">])</span>                        <span class="c1">#limit of the x axis</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>                            <span class="c1">#place the legend on the plot</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">which</span><span class="o">=</span><span class="s1">&#39;both&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span><span class="n">alpha</span><span class="o">=</span><span class="mf">.2</span><span class="p">)</span>  <span class="c1">#configure the grid lines</span>
 </pre></div>
 </div>
 </div>
@@ -475,13 +475,13 @@ plt.grid(&#39;--&#39;,which=&#39;both&#39;,color=&#39;gray&#39;,alpha=.2)  #conf
 <p>We can easily obtain the solution using the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import numpy as np #import numpy library to use exponential function
-Lambda = 1/10
-x = 2
-probability  =  1-np.exp(-Lambda*x)
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1">#import numpy library to use exponential function</span>
+<span class="n">Lambda</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">10</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">probability</span>  <span class="o">=</span>  <span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">Lambda</span><span class="o">*</span><span class="n">x</span><span class="p">)</span>
 
-#display the result rounded to three decimal places
-print(f&#39;The probability is {probability:.3f}&#39;) 
+<span class="c1">#display the result rounded to three decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The probability is </span><span class="si">{</span><span class="n">probability</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
@@ -503,13 +503,13 @@ print(f&#39;The probability is {probability:.3f}&#39;)
 <p>We can easily obtain the solution using the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span>import numpy as np #import numpy library to use exponential function
-Lambda = 1/10
-x = 10
-probability  =  1-(1-np.exp(-Lambda*x))
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1">#import numpy library to use exponential function</span>
+<span class="n">Lambda</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">10</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">probability</span>  <span class="o">=</span>  <span class="mi">1</span><span class="o">-</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">Lambda</span><span class="o">*</span><span class="n">x</span><span class="p">))</span>
 
-#display the result rounded to three decimal places
-print(f&#39;The probability is {probability:.3f}&#39;) 
+<span class="c1">#display the result rounded to three decimal places</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;The probability is </span><span class="si">{</span><span class="n">probability</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span> 
 </pre></div>
 </div>
 </div>
