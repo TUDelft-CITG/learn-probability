@@ -6,7 +6,7 @@
             {
                 "answer": "TRUE",
                 "correct": true,
-                "feedback": "Correct!."
+                "feedback": "Correct!"
             },
             {
                 "answer": "FALSE",
@@ -27,7 +27,7 @@
             {
                 "answer": "FALSE",
                 "correct": true,
-                "feedback": "Correct!. These events are not mutually exclusive! Damage can be caused by many things other than a typhoon. Alternatively, a typhon can occur but might not cause damage. Both situations imply that within the sample space the area of $A$ and $B$ overlap (typhoon and damage occurs) but there is also a region within the area for both events that does not overlap (typhoon without damage, or damage without typhoon)."
+                "feedback": "Correct! These events are not mutually exclusive! Damage can be caused by many things other than a typhoon. Alternatively, a typhon can occur but might not cause damage. Both situations imply that within the sample space the area of $A$ and $B$ overlap (typhoon and damage occurs) but there is also a region within the area for both events that does not overlap (typhoon without damage, or damage without typhoon)."
             }
         ]
     }
