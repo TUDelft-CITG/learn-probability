@@ -1,9 +1,11 @@
 name: deploy
 
 on:
-  push:
+  pull_request:
     branches:
-      - main
+      - publish
+    types:
+      - closed
     paths:
       - "book/**"
       - ".github/workflows/**"
