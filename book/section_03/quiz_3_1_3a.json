@@ -6,22 +6,22 @@
             {
                 "answer": "a)",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             },
             {
                 "answer": "b)",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             },
             {
                 "answer": "c)",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability that the total vehicle length of a randomly chosen T11O2 truck is larger than 14 m? Please round the answer to two decimal places.",
+        "question": "What is the probability that the total vehicle length of a randomly chosen T11O2 truck is larger than 14 m?",
         "type": "numeric",
         "precision": 2,
         "answers": [
@@ -29,12 +29,12 @@
                 "type": "value",
                 "value": 0.62,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the expected value of the total vehicle length? Please round the answer to two decimal places.",
+        "question": "What is the expected value of the total vehicle length?",
         "type": "numeric",
         "precision": 2,
         "answers": [
@@ -42,7 +42,7 @@
                 "type": "value",
                 "value": 14.35,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     }

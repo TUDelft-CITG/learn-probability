@@ -6,7 +6,7 @@
             {
                 "answer": "TRUE",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             },
             {
                 "answer": "FALSE",
@@ -22,7 +22,7 @@
             {
                 "answer": "TRUE",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             },
             {
                 "answer": "FALSE",
@@ -43,7 +43,7 @@
             {
                 "answer": "FALSE",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             }
         ]
     },
@@ -54,7 +54,7 @@
             {
                 "answer": "TRUE",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             },
             {
                 "answer": "FALSE",

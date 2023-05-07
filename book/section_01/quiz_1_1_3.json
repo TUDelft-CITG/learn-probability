@@ -6,7 +6,7 @@
             {
                 "answer": "Because Robert says so, and Robert is always right",
                 "correct": false,
-                "feedback": "This is DEFINITELY not correct!."
+                "feedback": "This is DEFINITELY not correct!"
             },
             {
                 "answer": "If an earthquake occurs during the year ($A$), then an earthquake not occurring is impossible ($\\bar{A}$)",

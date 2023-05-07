@@ -6,12 +6,12 @@
             {
                 "answer": "TRUE",
                 "correct": true,
-                "feedback": "Correct!."
+                "feedback": "Correct!"
             },
             {
                 "answer": "FALSE",
                 "correct": false,
-                "feedback": " "
+                "feedback": "False "
             }
         ]
     },
@@ -22,12 +22,12 @@
             {
                 "answer": "TRUE",
                 "correct": true,
-                "feedback": "Correct!."
+                "feedback": "Correct!"
             },
             {
                 "answer": "FALSE",
                 "correct": false,
-                "feedback": " "
+                "feedback": "False "
             }
         ]
     }

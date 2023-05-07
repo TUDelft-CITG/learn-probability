@@ -11,7 +11,7 @@
             {
                 "answer": "The intersection of the events $S_i$",
                 "correct": true,
-                "feedback": "Correct!"
+                "feedback": "Correct!!"
             },
             {
                 "answer": "Not enough information is provided",
@@ -48,7 +48,7 @@
             {
                 "answer": "FALSE",
                 "correct": true,
-                "feedback": "Correct!"
+                "feedback": "Correct!!"
             }
         ]
     }

@@ -42,7 +42,7 @@
         ]
     },
     {
-        "question": "What is the probability that the concrete compressive strength ranges from 20 to 30 $\\mathrm{MPa} $, i.e , $P(\\mathrm{A})$?",
+        "question": "What is the probability in three decimal places, that the concrete compressive strength ranges from 20 to 30 $\\mathrm{MPa} $, i.e , $P(\\mathrm{A})$?",
         "type": "numeric",
         "precision": 3,
         "answers": [

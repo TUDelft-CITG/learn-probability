@@ -12,7 +12,7 @@
             {
                 "answer": "1",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             },
             {
                 "answer": "2",
@@ -53,7 +53,7 @@
             {
                 "answer": "$1-P(A)$",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             },
             {
                 "answer": "Not enough information provided",
@@ -74,7 +74,7 @@
             {
                 "answer": "No",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
@@ -85,7 +85,7 @@
             {
                 "answer": "Yes",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             },
             {
                 "answer": "No",
