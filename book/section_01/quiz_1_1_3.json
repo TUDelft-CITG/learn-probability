@@ -16,7 +16,7 @@
             {
                 "answer": "If an earthquake doesn't happen during the year ($\\bar{A}$) then it hasn't happened ($A$)!",
                 "correct": true,
-                "feedback": "Correct!."
+                "feedback": "Correct!"
             }
         ]
     }
