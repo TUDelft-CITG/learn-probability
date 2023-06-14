@@ -1,4 +1,4 @@
-# Probability and Statistics Applications for Civil Engineers
+# Course Introduction
 
 Welcome to **Probability and Statistics Applications for Civil Engineers**. We're excited to have you join us in this self-paced online course, which is designed to bridge the gap between introductory and more advanced courses in probability and statistics.
 
