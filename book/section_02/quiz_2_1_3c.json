@@ -11,7 +11,7 @@
             {
                 "answer": "FLASE",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
@@ -22,7 +22,7 @@
             {
                 "answer": "TRUE",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             },
             {
                 "answer": "FLASE",

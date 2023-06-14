@@ -6,12 +6,13 @@
             {
                 "answer": "TRUE",
                 "correct": true,
-                "feedback": "Correct!."
+                "feedback": "Correct!!"
             },
             {
                 "answer": "FALSE",
                 "correct": false,
                 "feedback": " "
+            
             }
         ]
     },
@@ -22,7 +23,7 @@
             {
                 "answer": "TRUE",
                 "correct": true,
-                "feedback": "Correct!."
+                "feedback": "Correct!!"
             },
             {
                 "answer": "FALSE",

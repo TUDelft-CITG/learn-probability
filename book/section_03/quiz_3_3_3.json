@@ -11,7 +11,7 @@
             {
                 "answer": "FALSE",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             }
         ]
     },
@@ -22,38 +22,38 @@
             {
                 "answer": "TRUE",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             },
             {
                 "answer": "FALSE",
                 "correct": true,
-                "feedback": "Correct! "
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability that the ultimate tensile strengths are in the range 700 MPa - 750 MPa? Please round the answer to four decimal places.",
+        "question": "What is the probability that the ultimate tensile strengths are in the range 700 MPa - 750 MPa?",
         "type": "numeric",
-        "precision": 4,
+        "precision": 3,
         "answers": [
             {
                 "type": "value",
-                "value": 0.4025,
+                "value": 0.403,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability that a steel rebar sample picked at random has a ultimate tensile strength of 800 or more? Please round the answer to four decimal places.",
+        "question": "What is the probability that a steel rebar sample picked at random has a ultimate tensile strength of 800 or more?",
         "type": "numeric",
-        "precision": 4,
+        "precision": 3,
         "answers": [
             {
                 "type": "value",
-                "value": 0.0357,
+                "value": 0.036,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     }
