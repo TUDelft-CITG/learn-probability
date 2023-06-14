@@ -154,23 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and Statistics Applications for Civil Engineers
+                    Course Introduction
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 1. General probability concepts</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. General probability concepts</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Must_know_%20probability_concepts.html">Must-know probability concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Total_Probability_Theorem.html">Total Probability Theorem</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 2. Discrete random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Discrete random variables</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="2_1_Bernoulli_dist.html">Bernoulli distribution</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Binomial distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_3_Geometric_dist.html">Geometric distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_4_Poisson_dist.html">Poisson distribution</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 3. Continuous random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Continuous random variables</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_03/3_1_Uniform_dist.html">Uniform distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_03/3_2_Exponential_dist.html">Exponential distribution</a></li>
@@ -337,15 +337,6 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="binomial-distribution">
 <h1>Binomial distribution<a class="headerlink" href="#binomial-distribution" title="Permalink to this heading">#</a></h1>
-<p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/binomial_dist.PNG" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="230" /></p>
-<p>Welcome to the Binomial distribution module. At the end of this module, you will be able to identify distribution parameters and evaluate discrete probabilities for events using the Binomial distribution. Manipulate the distribution parameters to evaluate conditions relevant to Civil Engineering and Geosciences (CEG) applications</p>
-<p>This module is set up with a 3-unit format:</p>
-<ol class="arabic simple">
-<li><p>The basic theory of a specific concept.</p></li>
-<li><p>Example of how a specific concept is applied to a CEG problem, through step-by-step explanations and short python code blocks.</p></li>
-<li><p>Introduction of a new problem, to practice using the method from unit 2.</p></li>
-</ol>
-<hr class="docutils" />
 <section id="theory">
 <h2>1. Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
 <p>The binomial distribution is used when there are two outcomes of a trial (success and failure). It is used to obtain the probability of observing x successes in N trials, with the probability of success on a single trial denoted by p. The binomial distribution assumes that p is fixed for all trials. In other words, it is useful for computing the probability of meeting a particular threshold given a specific error rate, and thus has applications to risk management. For this reason, the binomial distribution is also important in determining statistical significance.</p>
@@ -373,7 +364,7 @@ document.write(`
 </ol>
 <p><strong>1. What is the probability that the design level of the culvert will be exceeded once in 50 years?</strong></p>
 <p>The most important part of this question is to realize that the answer is NOT 0.02! This may seem obvious right now, but it is a common mistake, since it is easy to associate the 50-year return period (that is, 1 / 0.02 = 50) to mean that the flood happens once in 50 years. Actually, the probability of exceeding the annual maximum flood level in one year is defined as 0.02, which is one of the parameters to use in our Binomial distribution, <span class="math notranslate nohighlight">\(p =  0.02\)</span>.</p>
-<p>We’re asked to solve for once in 50 years. Therefore,  <span class="math notranslate nohighlight">\(x = 1\)</span> and <span class="math notranslate nohighlight">\(n = 50\)</span></p>
+<p>We are asked to solve for once in 50 years. Therefore,  <span class="math notranslate nohighlight">\(x = 1\)</span> and <span class="math notranslate nohighlight">\(n = 50\)</span></p>
 <p><span class="math notranslate nohighlight">\( P(X=x) = \binom{50}{1}0.02^{1}(1-0.02)^{50-1}=0.372 \)</span></p>
 <p>Hence,  the probability that the design level of the culvert will be exceeded once in 50 years is 37.2%</p>
 <p>To answer this question we can use the following Python script:</p>
@@ -396,8 +387,8 @@ document.write(`
 </div>
 </div>
 </div>
-<p><strong>2. What is the probability that it will be exceeded twice in 50 years?</strong>
-Similarly that question 1. We’re asked to solve for twice in 50 years. Therefore,  <span class="math notranslate nohighlight">\(x = 2\)</span> and <span class="math notranslate nohighlight">\(n = 50\)</span> and <span class="math notranslate nohighlight">\(p = 0.02\)</span></p>
+<p><strong>2. What is the probability that it will be exceeded twice in 50 years?</strong></p>
+<p>Similarly to question 1. We are asked to solve for twice in 50 years. Therefore,  <span class="math notranslate nohighlight">\(x = 2\)</span> and <span class="math notranslate nohighlight">\(n = 50\)</span> and <span class="math notranslate nohighlight">\(p = 0.02\)</span></p>
 <p><span class="math notranslate nohighlight">\(P(X=x) = \binom{50}{2}0.02^{2}(1-0.02)^{50-2}=0.186 \)</span></p>
 <p>Hence,  the probability that the design level of the culvert will be exceeded twice in 50 years is 18.6%</p>
 <p>To answer this question we can use the following Python script:</p>
@@ -421,8 +412,8 @@ Similarly that question 1. We’re asked to solve for twice in 50 years. Therefo
 </div>
 </div>
 <p><strong>3.  What is the probability that it will be exceeded in 50 years?</strong></p>
-<p>Can you tell how this question is different from the first one? It’s subtle, and has to do with the value of <span class="math notranslate nohighlight">\(x\)</span>. In this problem we are interested in one or more floods in 50 years, whereas in the first question we want to consider exactly one flood. So, <span class="math notranslate nohighlight">\(x\geq 1\)</span> versus <span class="math notranslate nohighlight">\(x=1\)</span>. We can find this by summing up all possible values of <span class="math notranslate nohighlight">\(x\)</span>, but this is tedious, so we use the complement, <span class="math notranslate nohighlight">\(x=0\)</span>, which is much more simple, as shown below!</p>
-<p>The probability that the culvert capacity will be exceeded is the same as 1 minus  the probability that it will not be exceeded. Hence, <span class="math notranslate nohighlight">\(x = 0\)</span>, <span class="math notranslate nohighlight">\(n = 50\)</span> and <span class="math notranslate nohighlight">\(p = 0.02\)</span>.</p>
+<p>Can you tell how this question is different from the first one? It’s subtle and has to do with the value of <span class="math notranslate nohighlight">\(x\)</span>. In this problem we are interested in one or more floods in 50 years. Whereas in the first question we want to consider exactly one flood. So, <span class="math notranslate nohighlight">\(x\geq 1\)</span> versus <span class="math notranslate nohighlight">\(x=1\)</span>. We can find this by summing up all possible values of <span class="math notranslate nohighlight">\(x\)</span>, but this is tedious. So, we use the complement <span class="math notranslate nohighlight">\(x=0\)</span>, which is much simpler, as shown below!</p>
+<p>The probability that the culvert capacity will be exceeded is the same as 1 minus the probability that it will not be exceeded. Hence, <span class="math notranslate nohighlight">\(x = 0\)</span>, <span class="math notranslate nohighlight">\(n = 50\)</span> and <span class="math notranslate nohighlight">\(p = 0.02\)</span>.</p>
 <p><span class="math notranslate nohighlight">\( P(X=x) = 1-\binom{50}{0}0.02^{0}(1-0.02)^{50-0}=0.636 \)</span></p>
 <p>Hence,  the probability that the design level of the culvert will be exceeded  in 50 years is 63.6%</p>
 <p>To answer this question we can use the following Python script:</p>
@@ -446,9 +437,9 @@ Similarly that question 1. We’re asked to solve for twice in 50 years. Therefo
 </div>
 </div>
 <p><strong>4. What is the probability that it will be exceeded two or more times in 50 years?</strong></p>
-<p>The probability that design level will be exceeded two or more times  <span class="math notranslate nohighlight">\(x \leq 2 \)</span> in 50 years is the same as 1 minus the probability that design level be exceeded 0 or 1 times in 50 years. Hence <span class="math notranslate nohighlight">\(x_1 = 0\)</span>, <span class="math notranslate nohighlight">\(x_2 = 1\)</span>, <span class="math notranslate nohighlight">\(n = 50\)</span>  and <span class="math notranslate nohighlight">\(p = 0.02\)</span></p>
+<p>The probability that design level will be exceeded two or more times <span class="math notranslate nohighlight">\(x \leq 2 \)</span> in 50 years is the same as 1 minus the probability that design level be exceeded 0 or 1 times in 50 years. Hence <span class="math notranslate nohighlight">\(x_1 = 0\)</span>, <span class="math notranslate nohighlight">\(x_2 = 1\)</span>, <span class="math notranslate nohighlight">\(n = 50\)</span> and <span class="math notranslate nohighlight">\(p = 0.02\)</span></p>
 <p><span class="math notranslate nohighlight">\( P(X=x) = 1-\left [ \binom{50}{0}0.02^{0}(1-0.02)^{50-0}+\binom{50}{1}0.02^{1}(1-0.02)^{50-1}\right ]=0.264 \)</span></p>
-<p>Hence,  the probability that the design level of the culvert will be exceeded  two or more times in 50 years is 26.4%</p>
+<p>Hence, the probability that the design level of the culvert will be exceeded  two or more times in 50 years is 26.4%</p>
 <p>To answer this question we can use the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -481,7 +472,7 @@ Similarly that question 1. We’re asked to solve for twice in 50 years. Therefo
 <p>Please answer the following (round the answer to four decimal places):</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="KdXSpjtbiovA" data-shufflequestions="False"
+<div class="output text_html"><div id="erszJKxUqIdC" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -643,43 +634,43 @@ Similarly that question 1. We’re asked to solve for twice in 50 years. Therefo
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsKdXSpjtbiovA=[
+}</style></div><script type="application/javascript">var questionserszJKxUqIdC=[
     {
         "question": "What is the probability that non of the bridges are structurally deficient? ",
         "type": "numeric",
-        "precision": 4,
+        "precision": 3,
         "answers": [
             {
                 "type": "value",
-                "value": 0.2103,
+                "value": 0.210,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
         "question": "What is the probability that exactly 3 bridges are structurally deficient?",
         "type": "numeric",
-        "precision": 4,
+        "precision": 3,
         "answers": [
             {
                 "type": "value",
-                "value": 0.1278,
+                "value": 0.128,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
         "question": "What is the probability that at least 3 bridges are structurally deficient? ",
         "type": "numeric",
-        "precision": 4,
+        "precision": 3,
         "answers": [
             {
                 "type": "value",
-                "value": 0.1860,
+                "value": 0.186,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     }
@@ -1350,10 +1341,11 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -1417,9 +1409,13 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsKdXSpjtbiovA,  KdXSpjtbiovA);
+        show_questions(questionserszJKxUqIdC,  erszJKxUqIdC);
         }
         </script></div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Important!</p>
+<p>Review the worked example “Flood hazard assessment” and remember that all answers need to be rounded up to 3 decimal places!</p>
 </div>
 </section>
 </section>

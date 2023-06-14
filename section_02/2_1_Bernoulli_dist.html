@@ -154,23 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and Statistics Applications for Civil Engineers
+                    Course Introduction
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 1. General probability concepts</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. General probability concepts</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Must_know_%20probability_concepts.html">Must-know probability concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Total_Probability_Theorem.html">Total Probability Theorem</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 2. Discrete random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Discrete random variables</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Bernoulli distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_2_Binomial_dist.html">Binomial distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_3_Geometric_dist.html">Geometric distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_4_Poisson_dist.html">Poisson distribution</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 3. Continuous random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Continuous random variables</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_03/3_1_Uniform_dist.html">Uniform distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_03/3_2_Exponential_dist.html">Exponential distribution</a></li>
@@ -337,28 +337,19 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="bernoulli-distribution">
 <h1>Bernoulli distribution<a class="headerlink" href="#bernoulli-distribution" title="Permalink to this heading">#</a></h1>
-<p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/bernoulli_dist.PNG" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="230" /></p>
-<p>Welcome to the Bernoulli distribution module. At the end of this module, you will be able to identify distribution parameters and evaluate discrete probabilities for events using the Bernoulli distribution. Manipulate the distribution parameters to evaluate conditions relevant to Civil Engineering and Geosciences  (CEG) applications</p>
-<p>This module is set up with a 3-unit format:</p>
-<ol class="arabic simple">
-<li><p>The basic theory of a specific concept.</p></li>
-<li><p>Example of how a specific concept is applied to a CEG problem, through step-by-step explanations and short python code blocks.</p></li>
-<li><p>Introduction of a new problem, to practice using the method from unit 2.</p></li>
-</ol>
-<hr class="docutils" />
 <section id="theory">
 <h2>1. Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
 <p>Bernoulli distribution</p>
-<p>Let <span class="math notranslate nohighlight">\( X \)</span> be a discrete random variable with two possible outcomes, <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>. The one and zero are arbitrary and used to represent the two possible outcomes in a simple way; sometimes one of these values also defined as failure. The Bernoulli distribution is commonly used when there are two outcomes of a trial (success or failure) and the probability of success is equal to <span class="math notranslate nohighlight">\(p\)</span> (in this case we define success as <span class="math notranslate nohighlight">\(x=1\)</span>).</p>
+<p>Let <span class="math notranslate nohighlight">\( X \)</span> be a discrete random variable with two possible outcomes, <span class="math notranslate nohighlight">\(x=0\)</span> and <span class="math notranslate nohighlight">\(x=1\)</span>. The one and zero are arbitrary and used to represent the two possible outcomes in a simple way; sometimes one of these values is also defined as failure. The Bernoulli distribution is commonly used when there are two outcomes of a trial (success or failure) and the probability of success is equal to <span class="math notranslate nohighlight">\(p\)</span> (in this case we define success as <span class="math notranslate nohighlight">\(x=1\)</span>).</p>
 <p>There are three important assumptions required to be able to apply the Bernoulli Distribution in practice:</p>
 <ul class="simple">
-<li><p>Each trial has exactly two possible outcomes</p></li>
-<li><p>The probability of success (p) is the same across all trials</p></li>
-<li><p>Each trial is independent</p></li>
+<li><p>Each trial has exactly two possible outcomes.</p></li>
+<li><p>The probability of success (p) is the same across all trials.</p></li>
+<li><p>Each trial is independent.</p></li>
 </ul>
 <p>Based on these assumptions, we can write an equation that gives the probability of all possible outcomes of <span class="math notranslate nohighlight">\(x\)</span> (there are only two!). Such an equation is called a probability mass function (PMF) because it describes how probability is allocated to all possible values of <span class="math notranslate nohighlight">\(x\)</span>. The PMF of the Bernoulli distribution is derived as a function of <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(p\)</span> as follows:</p>
 <p><span class="math notranslate nohighlight">\(p_{X}(x)=P(X=x)=p^x(1-p)^{1-x} \quad \textrm{for} \quad x = 0,1 \)</span></p>
-<p>where <span class="math notranslate nohighlight">\(p\)</span> is the parameter that denotes the probability of a successful outcome. We can see that this PMF is quite simple for the Bernoulli case as <span class="math notranslate nohighlight">\(x\)</span> can only take on a single value which simplifies the equation. The reason we write out the PMF here is because later we will see that the Bernoulli Distribution is a special case of the Binomial Distribution, specifically: the case of a single trial.</p>
+<p>Where <span class="math notranslate nohighlight">\(p\)</span> is the parameter that denotes the probability of a successful outcome. We can see that this PMF is quite simple for the Bernoulli case as <span class="math notranslate nohighlight">\(x\)</span> can only take on a single value which simplifies the equation. The reason we write out the PMF here is because later we will see that the Bernoulli Distribution is a special case of the Binomial Distribution, specifically: the case of a single trial.</p>
 </section>
 <hr class="docutils" />
 <section id="student-population">
@@ -373,12 +364,12 @@ document.write(`
 </ol>
 <hr class="docutils" />
 <p><strong>1. What is the distribution of the number of master’s students?</strong></p>
-<p>We got a single trial, each student is a master’s student, or they are not. Hence the conditions of a Bernoulli distribution here are satisfied. So the number of master’s students is going to have a Bernoulli distribution with parameter <span class="math notranslate nohighlight">\(p =  4/9\)</span>.</p>
+<p>We got a single trial, each student is a master’s student, or they are not. Hence the conditions of a Bernoulli distribution here are satisfied. So, the number of master’s students is going to have a Bernoulli distribution with parameter <span class="math notranslate nohighlight">\(p = 4/9\)</span>.</p>
 <p>If we let the random variable (X) be the number of master’s students in our sample size 1. The distribution of the number of master’s students is:</p>
 <p><span class="math notranslate nohighlight">\( P(X=x) = \left ( \frac{4}{9} \right )^{x}\cdot \left (1-\frac{4}{9}\right )^{1-x} \)</span></p>
-<p>for <span class="math notranslate nohighlight">\(x=0,1\)</span> because we are gonna get a master’s student  (1) or not (0).</p>
+<p>for <span class="math notranslate nohighlight">\(x=0,1\)</span> because we are going to get a master’s student  (1) or not (0).</p>
 <p><strong>2. What is the probability that we do get one master student?</strong></p>
-<p>For this question 1 means that we do get one master’s student i.e. <span class="math notranslate nohighlight">\(x=1\)</span>. If we substitute  <span class="math notranslate nohighlight">\(x=1\)</span> in the previously obtained equation:</p>
+<p>From question 1 we know that if we get a master’s student, then <span class="math notranslate nohighlight">\(x=1\)</span>. By substituting the value of <span class="math notranslate nohighlight">\(x=1\)</span> into the obtained equation from question 1, one can determine the probability associated with the event of obtaining a single master’s student as follows:</p>
 <p><span class="math notranslate nohighlight">\( P(X=x) = \left ( \frac{4}{9} \right )^{1}\cdot \left (1-\frac{4}{9}\right )^{1-1} =  \frac{4}{9} = 0.444\)</span></p>
 <p>Hence, the probability that we do get one master’s student is about 44.4%</p>
 <p>To answer this question we can use the following Python script:</p>
@@ -400,7 +391,7 @@ document.write(`
 </div>
 </div>
 <p><strong>3. What is the probability that we do not get one master’s student?</strong></p>
-<p>Here, do not get one master’s student means that <span class="math notranslate nohighlight">\(x=0\)</span>. If we substitute  <span class="math notranslate nohighlight">\(x=0\)</span> in equation obtained in question 1:</p>
+<p>Here, by ‘do not get one master’s student’ it means that <span class="math notranslate nohighlight">\(x=0\)</span>. If we substitute <span class="math notranslate nohighlight">\(x=0\)</span> in the equation obtained from question 1, we get:</p>
 <p><span class="math notranslate nohighlight">\( P(X=0) = \left ( \frac{4}{9} \right )^{0}\cdot \left (1-\frac{4}{9}\right )^{1-0} =  \frac{5}{9} = 0.556\)</span></p>
 <p>Hence, the probability that we do not get one master’s student is about 55.6%</p>
 <p>To answer this question we can use the following Python script:</p>
@@ -432,7 +423,7 @@ document.write(`
 <p>Please answer the following:</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="DnIjGesEbNAl" data-shufflequestions="False"
+<div class="output text_html"><div id="tQsNVprMHmtM" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -594,9 +585,9 @@ document.write(`
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsDnIjGesEbNAl=[
+}</style></div><script type="application/javascript">var questionstQsNVprMHmtM=[
     {
-        "question": "If the number of international master's students has a Bernoulli distribution. What is the value of the parameter p? Please round the answer to three decimal places.",
+        "question": "If the number of international master's students has a Bernoulli distribution. What is the value of the parameter p?",
         "type": "numeric",
         "precision": 3,
         "answers": [
@@ -604,12 +595,12 @@ document.write(`
                 "type": "value",
                 "value": 0.334,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability that we do not get one international master's student? Please round the answer to three decimal places.",
+        "question": "What is the probability that we do not get one international master's student?",
         "type": "numeric",
         "precision": 3,
         "answers": [
@@ -617,7 +608,7 @@ document.write(`
                 "type": "value",
                 "value": 0.666,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     }
@@ -1288,10 +1279,11 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -1355,15 +1347,19 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsDnIjGesEbNAl,  DnIjGesEbNAl);
+        show_questions(questionstQsNVprMHmtM,  tQsNVprMHmtM);
         }
         </script></div>
 </div>
-<p>The following plots show three Bernoulli probability mass functions of the number of international master’s students:</p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Important!</p>
+<p>All answers need to be provided in three decimal places.</p>
+</div>
+<p>The following plots show three Bernoulli probability mass functions of the number of international master’s students. From left to right plot a, plot b and plot c:</p>
 <center><img title="a title" alt="msc students" src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/Master_students_pmf.png" width="700" 
      height="200" /></center><div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="YTLcjZUivocP" data-shufflequestions="False"
+<div class="output text_html"><div id="ZYeSDzQejqSb" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -1525,7 +1521,7 @@ if (typeof version == 'undefined') {
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsYTLcjZUivocP=[
+}</style></div><script type="application/javascript">var questionsZYeSDzQejqSb=[
     {
         "question": "What is the correct plot that describes the probability mass function of the number of international master's students?",
         "type": "multiple_choice",
@@ -1533,7 +1529,7 @@ if (typeof version == 'undefined') {
             {
                 "answer": "a)",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             },
             {
                 "answer": "b)",
@@ -2214,10 +2210,11 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -2281,14 +2278,14 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsYTLcjZUivocP,  YTLcjZUivocP);
+        show_questions(questionsZYeSDzQejqSb,  ZYeSDzQejqSb);
         }
         </script></div>
 </div>
 <p>Determine whether each statement is TRUE or FALSE</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="rbODIknIXzYI" data-shufflequestions="False"
+<div class="output text_html"><div id="XYkRHrkSJAIz" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -2450,7 +2447,7 @@ if (typeof version == 'undefined') {
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsrbODIknIXzYI=[
+}</style></div><script type="application/javascript">var questionsXYkRHrkSJAIz=[
     {
         "question": "The Bernoulli distribution is used when there are three outcomes of a trial",
         "type": "multiple_choice",
@@ -2463,7 +2460,7 @@ if (typeof version == 'undefined') {
             {
                 "answer": "FLASE",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
@@ -2474,7 +2471,7 @@ if (typeof version == 'undefined') {
             {
                 "answer": "TRUE",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             },
             {
                 "answer": "FLASE",
@@ -3150,10 +3147,11 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -3217,7 +3215,7 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsrbODIknIXzYI,  rbODIknIXzYI);
+        show_questions(questionsXYkRHrkSJAIz,  XYkRHrkSJAIz);
         }
         </script></div>
 </div>

@@ -154,23 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and Statistics Applications for Civil Engineers
+                    Course Introduction
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 1. General probability concepts</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. General probability concepts</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Must_know_%20probability_concepts.html">Must-know probability concepts</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Total Probability Theorem</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 2. Discrete random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Discrete random variables</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_1_Bernoulli_dist.html">Bernoulli distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_2_Binomial_dist.html">Binomial distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_3_Geometric_dist.html">Geometric distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_4_Poisson_dist.html">Poisson distribution</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 3. Continuous random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Continuous random variables</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_03/3_1_Uniform_dist.html">Uniform distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_03/3_2_Exponential_dist.html">Exponential distribution</a></li>
@@ -337,21 +337,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="total-probability-theorem">
 <h1>Total Probability Theorem<a class="headerlink" href="#total-probability-theorem" title="Permalink to this heading">#</a></h1>
-<p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/total_prob_theorem.PNG" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="230" /></p>
-<p>Welcome to the <strong>Total Probability Theorem module</strong>.</p>
-<p>This module is set up with a 3-unit format:</p>
-<ol class="arabic simple">
-<li><p>The basic theory of a specific concept.</p></li>
-<li><p>Example of how a specific concept is applied to a Civil Engineering and Geosciences (CEG) problem.</p></li>
-<li><p>Exercises to practice using the method from unit 2.</p></li>
-</ol>
-<hr class="docutils" />
 <section id="theory">
 <h2>1. Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
 <p>In this module, we will see a key theorem in probability: the total probability theorem. The importance of this theorem arises when the probability of an event cannot be calculated directly, but its occurrence is related to the occurrence of other events. We will apply it later to a water resources problem (to save the tulips!).</p>
 <hr class="docutils" />
 <p>Consider a set of mutually exclusive, collectively exhaustive events, denoted <span class="math notranslate nohighlight">\(B_i\)</span>, where <span class="math notranslate nohighlight">\(i=1, 2,…, n\)</span>.</p>
-<p><em>Side note: do you not remember the concepts of mutually exclusive or collectively exhaustive? Go back to the Must-know probability concepts module!</em></p>
+<p><em>Side note: do you not remember the concepts of mutually exclusive or collectively exhaustive? Go back to the “Must-know probability concepts module!</em>”</p>
 <p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/tot_prob_1.png
 " alt="" style="display: block; margin-left: auto; margin-right: auto;" width="310" height="330" /></p>
 <p>The figure above shows how the sample space is made up of all the possible outcomes related to <span class="math notranslate nohighlight">\(B_i\)</span>. Let’s consider another event <span class="math notranslate nohighlight">\(A\)</span>, which is illustrated in the following figure by the red rectangle. We can see that there are several different outcomes for <span class="math notranslate nohighlight">\(B_i\)</span> that can occur when <span class="math notranslate nohighlight">\(A\)</span> has occurred. We can also see that the probability of the other event <span class="math notranslate nohighlight">\(A\)</span> can be obtained through this set as:</p>
@@ -369,20 +360,20 @@ document.write(`
 <h2>2. Tulip fields<a class="headerlink" href="#tulip-fields" title="Permalink to this heading">#</a></h2>
 <p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/tulip_field.jpg
 " alt="" style="display: block; margin-left: auto; margin-right: auto;" width="210" height="130" /></p>
-<p>Tulip fields are one of the major touristic attractions in an area in South Holland, as well as an important source of income. Thus, the Public Authority in the area wants to know how vulnerable those fields are. Would you help them calculate the probability of the tulips being damaged in a given year, <span class="math notranslate nohighlight">\( P(A)\)</span>? Fortunately, you have already been provided historic data from which you can derive probabilities of bad events happening, <span class="math notranslate nohighlight">\(P(B_i)\)</span>, as well as the probability that such an event leads to damage, <span class="math notranslate nohighlight">\(P(A|B_i)\)</span>, which are summarized below.</p>
+<p>Tulip fields are one of the major touristic attractions in an area in South Holland, as well as an important source of income. Thus, the Public Authority in the area wants to know how vulnerable those fields are. Would you help them calculate the probability of the tulips being damaged in a given year, <span class="math notranslate nohighlight">\( P(A)\)</span>? Fortunately, you have already been provided historical data from which you can derive probabilities of bad events happening, <span class="math notranslate nohighlight">\(P(B_i)\)</span>, as well as the probability that such an event leads to damage, <span class="math notranslate nohighlight">\(P(A|B_i)\)</span>, which are summarized below.</p>
 <p>First, there may be a regional drought with a probability <span class="math notranslate nohighlight">\( P(B_1)=0.05\)</span> or a pipe in the supply system may break with a probability <span class="math notranslate nohighlight">\(P(B_2)=0.10\)</span>. There is a chance of <span class="math notranslate nohighlight">\(P(A|B_1)=0.65\)</span> and <span class="math notranslate nohighlight">\(P(A|B_2)=0.55\)</span> that tulips won’t grow if the regional drought or the pipe breakage happens, respectively.</p>
 <p>There may also be a human error in the operation of the water supply system, <span class="math notranslate nohighlight">\(P(B_3)=0.03\)</span>, which may make tulips be too dry or too wet and results in rotten tulips with a probability <span class="math notranslate nohighlight">\(P(A|B_3)=0.90\)</span>.</p>
-<p>Another possibility is that the stored water to ensure the supply may get polluted, <span class="math notranslate nohighlight">\(P(B_4)=0.05\)</span>, leading to a lack of water for the tulips with chance <span class="math notranslate nohighlight">\(P(A|B_4)=0.70\)</span>.</p>
+<p>Another possibility is that the stored water to ensure the supply may get polluted, <span class="math notranslate nohighlight">\(P(B_4)=0.05\)</span>, leading to a lack of water for the tulips with a chance of <span class="math notranslate nohighlight">\(P(A|B_4)=0.70\)</span>.</p>
 <p>Also, catastrophes can happen! There may be a plague or a fire that occurs with probabilities <span class="math notranslate nohighlight">\(P(B_5)=0.03\)</span> and <span class="math notranslate nohighlight">\(P(B_6)=0.05\)</span>, respectively. Those can lead to damage in the tulips field with probabilities <span class="math notranslate nohighlight">\(P(A|B_5)=0.80\)</span> and <span class="math notranslate nohighlight">\(P(A|B_6)=0.90\)</span>.</p>
 <p>Find a summary below.</p>
 <p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/Tulip_T1.png
 " alt="" style="display: block; margin-left: auto; margin-right: auto;" width="300" height="170" /></p>
 <hr class="docutils" />
-<p><strong>1. Assuming that the described events are independent, mutually exclusive, and collectively exhaustive, apply the Total Probability Theorem to calculate the probability of tulips being damaged one year, P(A).</strong></p>
+<p><strong>1. Assuming that the described events are independent, mutually exclusive, and collectively exhaustive, apply the Total Probability Theorem to calculate the probability of tulips being damaged in one year, P(A).</strong></p>
 <p>You can write out the total probability rule by hand, but often it is useful to keep track of all the individual events in a table:</p>
 <p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/Tulip_T2.png
 " alt="" style="display: block; margin-left: auto; margin-right: auto;" width="330" height="170" /></p>
-<p>Therefore the probability of tulips being damaged one year is <strong>0.219</strong></p>
+<p>Therefore the probability of tulips being damaged in one year is <strong>0.219</strong></p>
 <hr class="docutils" />
 <p><strong>2. Considering the values in the table bellow, which of the following actions should the Public Authority take first?</strong></p>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>a). Improve the maintenance of the pipes in the supply system
@@ -393,14 +384,14 @@ c). Improve safety protocols to prevent fire
 <p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/Tulip_T3.png
 " alt="" style="display: block; margin-left: auto; margin-right: auto;" width="350" height="130" /></p>
 <p>By looking at the values in the table we can say that the answer is “a) Improve the maintenance of the pipes in the supply system.”</p>
-<p>This is because the cause which contributes the most to the damages in the fields is the pipe breakage in the supply system. Thus, <strong>improving their maintenance</strong> may be one way to reduce <span class="math notranslate nohighlight">\(P(B_2)\)</span>. We could also try to reduce the value of  <span class="math notranslate nohighlight">\(P(A|B_2)\)</span>. Since this value is conditional on broken pipes, it obviously is a function of what happens at the tulip farm after the pipe breaks, for example, a leaky pipe detection system, or a backup water delivery system. If we can address those parts of the entire tulip growing system we can effectively reduce the overall probability of tulip damage.</p>
+<p>This is because the cause which contributes the most to the damages in the fields is the pipe breakage in the supply system. Thus, <strong>improving their maintenance</strong> may be one way to reduce <span class="math notranslate nohighlight">\(P(B_2)\)</span>. We could also try to reduce the value of  <span class="math notranslate nohighlight">\(P(A|B_2)\)</span>. Since this value is conditional on broken pipes, it obviously is a function of what happens at the tulip farm after the pipe breaks. For example, a leaky pipe detection system, or a backup water delivery system. If we can address those parts of the entire tulip growing system we can effectively reduce the overall probability of tulip damage.</p>
 </section>
 <hr class="docutils" />
 <section id="concrete-compressive-strength">
 <h2>3. Concrete compressive strength<a class="headerlink" href="#concrete-compressive-strength" title="Permalink to this heading">#</a></h2>
 <p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/Concrete_cores_tot_prob.png
 " alt="" style="display: block; margin-left: auto; margin-right: auto;" width="210" height="130" /></p>
-<p>The Table 1 shows the concrete compressive strength of 60 concrete core samples (<span class="math notranslate nohighlight">\( f_{c}^{'}\)</span>, in <span class="math notranslate nohighlight">\( \mathrm{MPa} \)</span>) taken in different buildings. The sample space can be represented by the foregoing mutually exclusive, collectively exhaustive events <span class="math notranslate nohighlight">\( \mathrm{B1}  \)</span>, <span class="math notranslate nohighlight">\( \mathrm{B2}  \)</span>, <span class="math notranslate nohighlight">\( \mathrm{B3}  \)</span>, and <span class="math notranslate nohighlight">\( \mathrm{B4} \)</span>, where:</p>
+<p>Table 1 shows the concrete compressive strength of 60 concrete core samples (<span class="math notranslate nohighlight">\( f_{c}^{'}\)</span>, in <span class="math notranslate nohighlight">\( \mathrm{MPa} \)</span>) taken in different buildings. The sample space can be represented by the foregoing mutually exclusive, collectively exhaustive events <span class="math notranslate nohighlight">\( \mathrm{B1}  \)</span>, <span class="math notranslate nohighlight">\( \mathrm{B2}  \)</span>, <span class="math notranslate nohighlight">\( \mathrm{B3}  \)</span>, and <span class="math notranslate nohighlight">\( \mathrm{B4} \)</span>, where:</p>
 <p><span class="math notranslate nohighlight">\( \mathrm{B1} \equiv \left \{11.57 \leq f_{c}^{'} &lt; 18.78 \, \mathrm{MPa} \right \}\)</span></p>
 <p><span class="math notranslate nohighlight">\( \mathrm{B2} \equiv \left \{18.78 \leq f_{c}^{'} &lt; 26.00 \, \mathrm{MPa} \right \}\)</span></p>
 <p><span class="math notranslate nohighlight">\( \mathrm{B3} \equiv \left \{26.00 \leq f_{c}^{'} &lt; 33.21 \, \mathrm{MPa} \right \}\)</span></p>
@@ -417,7 +408,7 @@ c). Improve safety protocols to prevent fire
 <p><strong>Please answer the following questions:</strong></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="meApwfTIYPOB" data-shufflequestions="False"
+<div class="output text_html"><div id="DaqmlHkhbdLy" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -579,7 +570,7 @@ c). Improve safety protocols to prevent fire
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsmeApwfTIYPOB=[
+}</style></div><script type="application/javascript">var questionsDaqmlHkhbdLy=[
     {
         "question": "What is the probability of the event $\\mathrm{B1}$, i.e, $P(\\mathrm{B1})$ ",
         "type": "multiple_choice",
@@ -592,7 +583,7 @@ c). Improve safety protocols to prevent fire
             {
                 "answer": "8/60",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!!!!"
             },
             {
                 "answer": "60/60",
@@ -602,7 +593,7 @@ c). Improve safety protocols to prevent fire
         ]
     },
     {
-        "question": "What is the probability of the event \(\mathrm{A}\) given the event $\\mathrm{B2}$, i.e, $P(\\mathrm{A} |\\mathrm{B2})$ ?",
+        "question": "What is the probability of the event (\\mathrm{A}) given the event $\\mathrm{B2}$, i.e, $P(\\mathrm{A} |\\mathrm{B2})$ ?",
         "type": "multiple_choice",
         "answers": [
             {
@@ -613,7 +604,7 @@ c). Improve safety protocols to prevent fire
             {
                 "answer": "22/23",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             },
             {
                 "answer": "19/25",
@@ -623,7 +614,7 @@ c). Improve safety protocols to prevent fire
         ]
     },
     {
-        "question": "What is the probability that the concrete compressive strength ranges from 20 to 30 $\\mathrm{MPa} $, i.e , $P(\\mathrm{A})$?",
+        "question": "What is the probability in three decimal places, that the concrete compressive strength ranges from 20 to 30 $\\mathrm{MPa} $, i.e , $P(\\mathrm{A})$?",
         "type": "numeric",
         "precision": 3,
         "answers": [
@@ -631,7 +622,7 @@ c). Improve safety protocols to prevent fire
                 "type": "value",
                 "value": 0.683,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     }
@@ -1302,10 +1293,11 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -1369,9 +1361,13 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsmeApwfTIYPOB,  meApwfTIYPOB);
+        show_questions(questionsDaqmlHkhbdLy,  DaqmlHkhbdLy);
         }
         </script></div>
+</div>
+<div class="dropdown admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Check how many values fall between 20 MPa and 30 MPa in table 1. Give the answer in three decimal places.</p>
 </div>
 </section>
 </section>

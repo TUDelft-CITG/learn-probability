@@ -153,23 +153,23 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and Statistics Applications for Civil Engineers
+                    Course Introduction
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 1. General probability concepts</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. General probability concepts</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Must_know_%20probability_concepts.html">Must-know probability concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Total_Probability_Theorem.html">Total Probability Theorem</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 2. Discrete random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Discrete random variables</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_1_Bernoulli_dist.html">Bernoulli distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_2_Binomial_dist.html">Binomial distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_3_Geometric_dist.html">Geometric distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_4_Poisson_dist.html">Poisson distribution</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 3. Continuous random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Continuous random variables</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="3_1_Uniform_dist.html">Uniform distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3_2_Exponential_dist.html">Exponential distribution</a></li>
@@ -336,18 +336,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="normal-distribution">
 <h1>Normal distribution<a class="headerlink" href="#normal-distribution" title="Permalink to this heading">#</a></h1>
-<p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/Normal_dist.PNG" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="230" /></p>
-<p>Welcome to the Normal distribution module.  At the end of this module, you will be able to identify distribution parameters and evaluate probabilities for events using the Normal distribution. Manipulate the distribution parameters to evaluate conditions relevant to Civil Engineering and Geosciences (CEG) applications.</p>
-<p>This module is set up with a 3-unit format:</p>
-<ol class="arabic simple">
-<li><p>The basic theory of a specific concept.</p></li>
-<li><p>Example of how a specific concept is applied to a  CEG problem, through step-by-step explanations and short python code blocks.</p></li>
-<li><p>Introduction of a new problem, to practice using the method from unit 2.</p></li>
-</ol>
-<hr class="docutils" />
 <section id="theory">
 <h2>1. Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
-<p>The Normal distribution is one of the most important distributions and is widely used in probability theory.  A continuous random variable X has a Normal distribution with parameters  <span class="math notranslate nohighlight">\(\mu\)</span> (mean) and <span class="math notranslate nohighlight">\(\sigma\)</span> (standard deviation) if its probability density function (PDF) is given by:</p>
+<p>The Normal distribution is one of the most important distributions and is widely used in probability theory.  A continuous random variable X has a Normal distribution with parameters  <span class="math notranslate nohighlight">\(\mu\)</span> (mean) and <span class="math notranslate nohighlight">\(\sigma\)</span> (standard deviation). The probability density function (PDF) is given by:</p>
 <p><span class="math notranslate nohighlight">\(f(x)=\frac{1}{\sigma \sqrt{2\pi }}\textrm{exp}\left [  {-\frac{1}{2}\left ( \frac{x-\mu }{\sigma } \right )^{2}}\right ] \)</span></p>
 <p>The cumulative distribution function (CDF) of the normal distribution can only be evaluated by numerical methods. In practice, one uses the standardized curve for the purpose of evaluation with the transformation of the variate X to Z as follows:</p>
 <p><span class="math notranslate nohighlight">\( Z=\frac{X-\mu}{\sigma} \)</span></p>
@@ -362,7 +353,7 @@ document.write(`
 <h2>2. Water content<a class="headerlink" href="#water-content" title="Permalink to this heading">#</a></h2>
 <center><img title="a title" alt="" src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/Water_contet_normal.png" width="300" 
      height="200" /></center>
-<p>According to <a class="reference external" href="https://doi.org/10.1016/S0013-7952(02)00151-5">Characterization of Eagle Ford Shale</a>,  the laboratory and field testing results of Eagle Ford Shale at the cancelled Superconducting Super Collider (SSC) project in Texas, USA. The Eagle Ford Shale has an average water content that can be generally considered to be normally distributed with a mean of 16% and a standard deviation of 2%.</p>
+<p>According to <a class="reference external" href="https://doi.org/10.1016/S0013-7952(02)00151-5">Characterization of Eagle Ford Shale</a>,  the laboratory and field testing results of Eagle Ford Shale at the cancelled Superconducting Super Collider (SSC) project in Texas, USA are shown in  the chart above. The Eagle Ford Shale has an average water content that can be generally considered to be normally distributed with a mean of 16% and a standard deviation of 2%.</p>
 <ol class="arabic simple">
 <li><p>What value of water content is exceeded in 45 tests out of 50?</p></li>
 <li><p>What is the probability that a clay sample picked at random has 15% of water content or less?</p></li>
@@ -371,12 +362,13 @@ document.write(`
 </ol>
 <p><strong>1. What value of water content is exceeded in 45 tests out of 50?</strong></p>
 <p>According to the laboratory results, the mean of the distribution is <span class="math notranslate nohighlight">\(\mu = 16\)</span>  and the standard deviation is <span class="math notranslate nohighlight">\(\sigma = 2\)</span></p>
-<p>We need to find the value of x which satisﬁes the condition:
-<span class="math notranslate nohighlight">\( P(X&gt;x) = 1 - F(x) = 1 - f(z) = \frac{45}{50} = 0.9 \)</span></p>
+<p>We need to find the value of x which satisﬁes the condition:</p>
+<p><span class="math notranslate nohighlight">\( P(X&gt;x) = 1 - F(x) = 1 - f(z) = \frac{45}{50} = 0.9 \)</span></p>
 <p>Thus, <span class="math notranslate nohighlight">\( f(z) = 1-0.9=0.1 \)</span></p>
 <p>From the <a class="reference external" href="https://en.wikipedia.org/wiki/Standard_normal_table">Table</a>, <span class="math notranslate nohighlight">\( z = -1.28 \)</span> satisfies the condition.</p>
 <p>From the equation <span class="math notranslate nohighlight">\( z = \frac{x-\mu}{\sigma} \)</span>.</p>
-<p>Solving for <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\( x = \mu +z \sigma  = 16 - 1.28(2) = 13.44 \)</span></p>
+<p>Solving for <span class="math notranslate nohighlight">\(x\)</span>:</p>
+<p><span class="math notranslate nohighlight">\( x = \mu +z \sigma  = 16 - 1.28(2) = 13.44 \)</span></p>
 <p>Hence, the water content is exceeded in 45 tests out of 50 is 13.44%</p>
 <p>We can easily obtain the solution using the following Python script:</p>
 <div class="cell docutils container">
@@ -393,7 +385,14 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The water content is exceeded in 45 tests out of 50 is 13.44 %
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>            <span class="c1">#import normal function</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">45</span><span class="o">/</span><span class="mi">50</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">mu</span> <span class="o">=</span> <span class="mi">16</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;scipy&#39;
 </pre></div>
 </div>
 </div>
@@ -476,11 +475,11 @@ document.write(`
 <div class="cell_output docutils container">
 <div class="output text_html"><iframe width="560" height="315" src="https://www.youtube.com/embed/0ok09bucMXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></div>
 </div>
-<p>The video that you saw is a steel reinforcing bar tensile strength test.  According to the laboratory test reported in the scientific publication <a class="reference external" href="https://doi.org/10.1016/j.engstruct.2019.03.011">“Reliability analysis of reinforced concrete vehicle bridges columns”</a>. The ultimate tensile strength <span class="math notranslate nohighlight">\(f_u\)</span> of the steel bars in the study column, is described with a Normal distribution with a mean of 716.14 MPa and a standard deviation of 46.5 MPa.</p>
+<p>The video that you saw is a steel reinforcing bar tensile strength test.  According to the laboratory test reported in the scientific publication <a class="reference external" href="https://doi.org/10.1016/j.engstruct.2019.03.011">“Reliability analysis of reinforced concrete vehicle bridges columns”</a>. The ultimate tensile strength <span class="math notranslate nohighlight">\(f_u\)</span> of the steel bars in the experiment, is described with a Normal distribution with a mean of 716.14 MPa and a standard deviation of 46.5 MPa.</p>
 <p><strong>Please answer the following:</strong></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="uQRPGiPVshWD" data-shufflequestions="False"
+<div class="output text_html"><div id="QSDFxqJsNkfY" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -642,7 +641,7 @@ document.write(`
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsuQRPGiPVshWD=[
+}</style></div><script type="application/javascript">var questionsQSDFxqJsNkfY=[
     {
         "question": " $P(X\\leq 623.14) = P(X \\geq 809.14)$",
         "type": "multiple_choice",
@@ -655,7 +654,7 @@ document.write(`
             {
                 "answer": "FALSE",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             }
         ]
     },
@@ -666,38 +665,38 @@ document.write(`
             {
                 "answer": "TRUE",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             },
             {
                 "answer": "FALSE",
                 "correct": true,
-                "feedback": "Correct! "
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability that the ultimate tensile strengths are in the range 700 MPa - 750 MPa? Please round the answer to four decimal places.",
+        "question": "What is the probability that the ultimate tensile strengths are in the range 700 MPa - 750 MPa?",
         "type": "numeric",
-        "precision": 4,
+        "precision": 3,
         "answers": [
             {
                 "type": "value",
-                "value": 0.4025,
+                "value": 0.403,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability that a steel rebar sample picked at random has a ultimate tensile strength of 800 or more? Please round the answer to four decimal places.",
+        "question": "What is the probability that a steel rebar sample picked at random has a ultimate tensile strength of 800 or more?",
         "type": "numeric",
-        "precision": 4,
+        "precision": 3,
         "answers": [
             {
                 "type": "value",
-                "value": 0.0357,
+                "value": 0.036,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     }
@@ -1368,10 +1367,11 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -1435,9 +1435,13 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsuQRPGiPVshWD,  uQRPGiPVshWD);
+        show_questions(questionsQSDFxqJsNkfY,  QSDFxqJsNkfY);
         }
         </script></div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Important!</p>
+<p>Answer all questions in three decimal places.</p>
 </div>
 </section>
 </section>

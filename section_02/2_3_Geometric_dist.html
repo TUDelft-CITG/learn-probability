@@ -154,23 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and Statistics Applications for Civil Engineers
+                    Course Introduction
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 1. General probability concepts</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. General probability concepts</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Must_know_%20probability_concepts.html">Must-know probability concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Total_Probability_Theorem.html">Total Probability Theorem</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 2. Discrete random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Discrete random variables</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="2_1_Bernoulli_dist.html">Bernoulli distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_2_Binomial_dist.html">Binomial distribution</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Geometric distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_4_Poisson_dist.html">Poisson distribution</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 3. Continuous random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Continuous random variables</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_03/3_1_Uniform_dist.html">Uniform distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_03/3_2_Exponential_dist.html">Exponential distribution</a></li>
@@ -337,18 +337,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="geometric-distribution">
 <h1>Geometric distribution<a class="headerlink" href="#geometric-distribution" title="Permalink to this heading">#</a></h1>
-<p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/geometric_dist.PNG" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="230" /></p>
-<p>Welcome to the Geometric distribution module. At the end of this module, you will be able to identify distribution parameters and evaluate discrete probabilities for events using the Geometric distribution. Manipulate the distribution parameters to evaluate conditions relevant to Civil Engineering and Geosciences (CEG) applications.</p>
-<p>This module is set up with a 3-unit format:</p>
-<ol class="arabic simple">
-<li><p>The basic theory of a specific concept.</p></li>
-<li><p>Example of how a specific concept is applied to a  CEG problem, through step-by-step explanations and short python code blocks.</p></li>
-<li><p>Introduction of a new problem, to practice using the method from unit 2.</p></li>
-</ol>
-<hr class="docutils" />
 <section id="theory">
 <h2>1. Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
-<p>The geometric distribution is a discrete probability distribution where the random variable ( x ) indicates the number of Bernoulli trials required to get the first success (or failure). It is based on  the following three  assumptions:</p>
+<p>The geometric distribution is a discrete probability distribution where the random variable ( x ) indicates the number of Bernoulli trials required to get the first success (or failure). It is based on the following three assumptions:</p>
 <ol class="arabic simple">
 <li><p>The trials being conducted are independent.</p></li>
 <li><p>There can only be two outcomes of each trial - success or failure.</p></li>
@@ -446,11 +437,11 @@ document.write(`
      height="200" /></center>
 <p>The Weigh-in-motion (WIM) system is a technology designed to measure vehicle attributes such as gross vehicle weight (GVW) and vehicle length as vehicles drive over a measurement site. Suppose that the probability of measuring a heavy vehicle with a gross vehicle weight over 50 tonnes per month is 12%.</p>
 <p><strong>Please answer the following:</strong></p>
-<p>The following plots show three probability mass functions:</p>
+<p>The following plots show three probability mass functions, from left to right plot a, plot b and plot c:</p>
 <p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/02_03_03_Heavy_vehicle_pmf.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="700" height="230" /></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="qyGxPHvZyCkO" data-shufflequestions="False"
+<div class="output text_html"><div id="lErtBcUkOPwe" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -612,7 +603,7 @@ document.write(`
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsqyGxPHvZyCkO=[
+}</style></div><script type="application/javascript">var questionslErtBcUkOPwe=[
     {
         "question": "What is the correct plot that describes the probability mass function of the number of international master's students?",
         "type": "multiple_choice",
@@ -625,7 +616,7 @@ document.write(`
             {
                 "answer": "b)",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             },
             {
                 "answer": "c)",
@@ -635,7 +626,7 @@ document.write(`
         ]
     },
     {
-        "question": "What is the probability that the WIM system will measure the first heavy vehicle with a GWV>50 in exactly 3 months? Please round the answer to three decimal places.",
+        "question": "What is the probability that the WIM system will measure the first heavy vehicle with a GWV>50 in exactly 3 months?",
         "type": "numeric",
         "precision": 3,
         "answers": [
@@ -643,12 +634,12 @@ document.write(`
                 "type": "value",
                 "value": 0.093,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability that the WIM system will measure the first heavy vehicle with a GWV>50 in 4 months or less?  Please round the answer to three decimal places.",
+        "question": "What is the probability that the WIM system will measure the first heavy vehicle with a GWV>50 in 4 months or less?",
         "type": "numeric",
         "precision": 3,
         "answers": [
@@ -656,12 +647,12 @@ document.write(`
                 "type": "value",
                 "value": 0.400,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability that the WIM system will measure the first heavy vehicle with a GWV>50 in 6 months or more?  Please round the answer to three decimal places.",
+        "question": "What is the probability that the WIM system will measure the first heavy vehicle with a GWV>50 in 6 months or more?",
         "type": "numeric",
         "precision": 3,
         "answers": [
@@ -669,7 +660,7 @@ document.write(`
                 "type": "value",
                 "value": 0.528,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     }
@@ -1340,10 +1331,11 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -1407,9 +1399,13 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsqyGxPHvZyCkO,  qyGxPHvZyCkO);
+        show_questions(questionslErtBcUkOPwe,  lErtBcUkOPwe);
         }
         </script></div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Important!</p>
+<p>Provide all answers in three decimals places.</p>
 </div>
 </section>
 </section>

@@ -154,23 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and Statistics Applications for Civil Engineers
+                    Course Introduction
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 1. General probability concepts</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. General probability concepts</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Must_know_%20probability_concepts.html">Must-know probability concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Total_Probability_Theorem.html">Total Probability Theorem</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 2. Discrete random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Discrete random variables</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_1_Bernoulli_dist.html">Bernoulli distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_2_Binomial_dist.html">Binomial distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_3_Geometric_dist.html">Geometric distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_4_Poisson_dist.html">Poisson distribution</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 3. Continuous random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Continuous random variables</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Uniform distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3_2_Exponential_dist.html">Exponential distribution</a></li>
@@ -337,29 +337,22 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="uniform-distribution">
 <h1>Uniform distribution<a class="headerlink" href="#uniform-distribution" title="Permalink to this heading">#</a></h1>
-<p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/uniform_dist.PNG" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="230" /></p>
-<p>Welcome to the Uniform distribution module.  At the end of this module, you will be able to identify distribution parameters and evaluate probabilities for events using the Uniform distribution. Manipulate the distribution parameters to evaluate conditions relevant to Civil Engineering and Geosciences (CEG) applications</p>
-<p>This module is set up with a 3-unit format:</p>
-<ol class="arabic simple">
-<li><p>The basic theory of a specific concept.</p></li>
-<li><p>Example of how a specific concept is applied to a  CEG problem, through step-by-step explanations and short python code blocks.</p></li>
-<li><p>Introduction of a new problem, to practice using the method from unit 2.</p></li>
-</ol>
-<hr class="docutils" />
 <section id="theory">
 <h2>1. Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
 <p>The uniform distribution is the simplest type of continuous probability distribution. The uniform distribution for a continuous random variable is defined by a constant probability density over an interval [a,b].</p>
-<p>The probability density function (PDF) of the continuous uniform distribution is:
-<span class="math notranslate nohighlight">\(f(x)=\left\{\begin{matrix}
+<p>The probability density function (PDF) of the continuous uniform distribution is:</p>
+<p><span class="math notranslate nohighlight">\(f(x)=\left\{\begin{matrix}
 \frac{1}{b-a} &amp; \mathrm{for} \, a\leq x\leq b, \\
 0 &amp; \mathrm{for} \, x &lt; a \, \mathrm{or} \, x&gt; b
 \end{matrix}\right. \)</span></p>
-<p>The cumulative distribution function (CDF) is: <span class="math notranslate nohighlight">\(F(x)=\left\{\begin{matrix}
+<p>The cumulative distribution function (CDF) is:</p>
+<p><span class="math notranslate nohighlight">\(F(x)=\left\{\begin{matrix}
 0 &amp; \mathrm{for} \,  x &lt; a \\
 \frac{x-a}{b-a} &amp; \mathrm{for} \, a\leq x\leq b, \\
 1 &amp; \mathrm{for} \, x&gt; b
 \end{matrix}\right.\)</span></p>
-<p>The mean or expected value of of the uniform distribution is given by: <span class="math notranslate nohighlight">\(E\left [ X \right ] = \frac{b+a}{2 }\)</span></p>
+<p>The mean or expected value of the uniform distribution is given by:</p>
+<p><span class="math notranslate nohighlight">\(E\left [ X \right ] = \frac{b+a}{2 }\)</span></p>
 <p>The variance is: <span class="math notranslate nohighlight">\(\mathrm{Var}\left [ X \right ] = \frac{(b-a)^{2}}{12 }\)</span></p>
 </section>
 <hr class="docutils" />
@@ -386,7 +379,7 @@ document.write(`
 <p>The probability that a continuous random variable equals some value is always zero.</p>
 <p><strong>3. What is the probability that the student would have to wait at least 9.5 minutes?</strong></p>
 <p>The duration of the wait time of the taxi from the pickup point ranges from five to fifteen minutes. Therefore, the two constants are  <span class="math notranslate nohighlight">\(a=5\)</span> and <span class="math notranslate nohighlight">\(b=15\)</span></p>
-<p>Then, we’re asked to solve for <span class="math notranslate nohighlight">\(x \leq 9.5\)</span>. Therefore we need to use the CDF of the uniform distribution</p>
+<p>Then, we are asked to solve for <span class="math notranslate nohighlight">\(x \leq 9.5\)</span>. Therefore, we need to use the CDF of the uniform distribution:</p>
 <p><span class="math notranslate nohighlight">\(P(X \leq x) = \frac{x-a}{b-a}\)</span></p>
 <p><span class="math notranslate nohighlight">\(P(X \leq 9.5) = \frac{9.5-5}{15-5}= 0.45\)</span></p>
 <p>Therefore, the probability that the student would have to wait at least 9.5 minutes is 45%</p>
@@ -411,7 +404,7 @@ document.write(`
 </div>
 </div>
 <p><strong>4. What is the probability that a student would have to wait more than 5.8 minutes?</strong></p>
-<p>We’re asked to solve for <span class="math notranslate nohighlight">\(x &gt; 5.8 \)</span>:</p>
+<p>We are asked to solve for <span class="math notranslate nohighlight">\(x &gt; 5.8 \)</span>:</p>
 <p><span class="math notranslate nohighlight">\( P(X &gt; x) = 1 - \frac{x-a}{b-a}\)</span></p>
 <p><span class="math notranslate nohighlight">\( P(X &gt; 5.8) = 1 - \frac{5.8-5}{15-5}= 0.92\)</span></p>
 <p>Therefore, the probability that the student would have to wait at least 5.8 minutes is 92%</p>
@@ -447,7 +440,7 @@ document.write(`
 <p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/03_01_03_Total_vehilce_length_pdf.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="700" height="230" /></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="ZLoNnErqKmbu" data-shufflequestions="False"
+<div class="output text_html"><div id="sieNMjaNCzfu" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -609,7 +602,7 @@ document.write(`
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsZLoNnErqKmbu=[
+}</style></div><script type="application/javascript">var questionssieNMjaNCzfu=[
     {
         "question": "What is the correct plot that describes the probability density function of the total vehicle length? ",
         "type": "multiple_choice",
@@ -617,22 +610,22 @@ document.write(`
             {
                 "answer": "a)",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             },
             {
                 "answer": "b)",
                 "correct": false,
-                "feedback": ""
+                "feedback": "False"
             },
             {
                 "answer": "c)",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability that the total vehicle length of a randomly chosen T11O2 truck is larger than 14 m? Please round the answer to two decimal places.",
+        "question": "What is the probability that the total vehicle length of a randomly chosen T11O2 truck is larger than 14 m?",
         "type": "numeric",
         "precision": 2,
         "answers": [
@@ -640,12 +633,12 @@ document.write(`
                 "type": "value",
                 "value": 0.62,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the expected value of the total vehicle length? Please round the answer to two decimal places.",
+        "question": "What is the expected value of the total vehicle length?",
         "type": "numeric",
         "precision": 2,
         "answers": [
@@ -653,7 +646,7 @@ document.write(`
                 "type": "value",
                 "value": 14.35,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     }
@@ -1324,10 +1317,11 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -1391,9 +1385,13 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsZLoNnErqKmbu,  ZLoNnErqKmbu);
+        show_questions(questionssieNMjaNCzfu,  sieNMjaNCzfu);
         }
         </script></div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Important!</p>
+<p>Answer all questions in three decimal places and review the “Waiting time” example questions and answers to help you answer these questions.</p>
 </div>
 <p>Determine whether each statement is TRUE or FALSE</p>
 <div class="cell tag_remove-input docutils container">

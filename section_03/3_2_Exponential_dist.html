@@ -154,23 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and Statistics Applications for Civil Engineers
+                    Course Introduction
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 1. General probability concepts</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. General probability concepts</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Must_know_%20probability_concepts.html">Must-know probability concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Total_Probability_Theorem.html">Total Probability Theorem</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 2. Discrete random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Discrete random variables</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_1_Bernoulli_dist.html">Bernoulli distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_2_Binomial_dist.html">Binomial distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_3_Geometric_dist.html">Geometric distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_02/2_4_Poisson_dist.html">Poisson distribution</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 3. Continuous random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Continuous random variables</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="3_1_Uniform_dist.html">Uniform distribution</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Exponential distribution</a></li>
@@ -337,15 +337,6 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="exponential-distribution">
 <h1>Exponential distribution<a class="headerlink" href="#exponential-distribution" title="Permalink to this heading">#</a></h1>
-<p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/exponential_dist.PNG" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="230" /></p>
-<p>Welcome to the Exponential distribution module.  At the end of this module, you will be able to identify distribution parameters and evaluate probabilities for events using the Exponential distribution. Manipulate the distribution parameters to evaluate conditions relevant to Civil Engineering and Geosciences (CEG) applications</p>
-<p>This module is set up with a 3-unit format:</p>
-<ol class="arabic simple">
-<li><p>The basic theory of a specific concept.</p></li>
-<li><p>Example of how a specific concept is applied to a  CEG problem, through step-by-step explanations and short python code blocks.</p></li>
-<li><p>Introduction of a new problem, to practice using the method from unit 2.</p></li>
-</ol>
-<hr class="docutils" />
 <section id="theory">
 <h2>1. Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
 <p>The exponential distribution is the probability distribution of the time between successive events of a Poisson process. The distribution is applicable for other variables such as length and space in addition to time.</p>
@@ -364,7 +355,7 @@ document.write(`
 <h2>2. Dam construction safety<a class="headerlink" href="#dam-construction-safety" title="Permalink to this heading">#</a></h2>
 <center><img title="a title" alt="" src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/Dam_river_diversion.png" width="300" 
      height="200" /></center>
-<p>A contractor is building a dam and river diversion is key to construction safety. The contractor is concerned about the possible occurrence of a flood exceeding 120 m3/s which can interrupt the construction. According to the records, a flow of such magnitude is exceeded once in 10 years on average. Assuming that the floods exceeding events are independent, identically distributed, and can be modelled with an exponential distribution. The contractor would like to know:</p>
+<p>A contractor is building a dam and river diversion is key to construction safety. The contractor is concerned about the possible occurrence of a flood exceeding 120 <span class="math notranslate nohighlight">\(m^{3}/s\)</span> which can interrupt the construction. According to the records, a flow of such magnitude is exceeded once in 10 years on average. Assuming that the floods exceeding events are independent, identically distributed, and can be modelled with an exponential distribution. The contractor would like to know:</p>
 <ol class="arabic simple">
 <li><p>What is the probability density function that describes the years between floods exceeding events?</p></li>
 <li><p>What is the chance that the construction will suffer interruptions in the first 2 years?</p></li>
@@ -372,7 +363,7 @@ document.write(`
 </ol>
 <p><strong>1. What is the probability density function that describes the years between floods exceeding events?</strong></p>
 <p>The estimated mean time interval between flood events is 10 years. Hence, <span class="math notranslate nohighlight">\(\lambda = 1/10 = 0.1\)</span></p>
-<p>If we let the random variable <span class="math notranslate nohighlight">\(X\)</span> be the number of years between flood exceeding events. Then the PDF is is:</p>
+<p>If we let the random variable <span class="math notranslate nohighlight">\(X\)</span> be the number of years between flood exceeding events. Then the PDF is:</p>
 <p><span class="math notranslate nohighlight">\(f(x) = 0.1 e^{-0.1 x}\)</span></p>
 <p>The plot of the PDF can be generated with the following script</p>
 <div class="cell docutils container">
@@ -431,8 +422,8 @@ document.write(`
      height="200" /></center>
 <p><strong>3. The construction of the bridge is scheduled to last 5 years. What is the probability that the work can be done without interruption because of the possible occurrence of a flood exceeding?</strong></p>
 <p>The estimated mean time interval between flood events is 10 years. Hence, <span class="math notranslate nohighlight">\(\lambda = 1/10 = 0.1\)</span></p>
-<p>Then, we’re asked to solve for <span class="math notranslate nohighlight">\(x &gt; 5\)</span>. This means that we need to apply 1 - CDF of the exponential distribution, i.e.:
-<span class="math notranslate nohighlight">\( P(X &gt; x) = 1 - P(X \leq x) = 1- (1 - e^{-\lambda x})\)</span></p>
+<p>Then, we’re asked to solve for <span class="math notranslate nohighlight">\(x &gt; 5\)</span>. This means that we need to apply 1 - CDF of the exponential distribution as follows:</p>
+<p><span class="math notranslate nohighlight">\( P(X &gt; x) = 1 - P(X \leq x) = 1- (1 - e^{-\lambda x})\)</span></p>
 <p><span class="math notranslate nohighlight">\(P(X &gt; 5) = 1- (1 - e^{-0.1 (5)})= 0.368\)</span></p>
 <p>Therefore, the probability that the work can be done without interruption is 36.8%</p>
 <p>We can easily obtain the solution using the following Python script:</p>
@@ -464,7 +455,7 @@ document.write(`
 <p><strong>Please answer the following:</strong></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="iHBRbYDLOFlr" data-shufflequestions="False"
+<div class="output text_html"><div id="VRIFHzeJLAbe" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -626,7 +617,7 @@ document.write(`
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsiHBRbYDLOFlr=[
+}</style></div><script type="application/javascript">var questionsVRIFHzeJLAbe=[
     {
         "question": "What is the value of $\\lambda_A$?",
         "type": "numeric",
@@ -636,7 +627,7 @@ document.write(`
                 "type": "value",
                 "value": 2,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
@@ -649,7 +640,7 @@ document.write(`
                 "type": "value",
                 "value": 8,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     }
@@ -1320,10 +1311,11 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -1387,7 +1379,7 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsiHBRbYDLOFlr,  iHBRbYDLOFlr);
+        show_questions(questionsVRIFHzeJLAbe,  VRIFHzeJLAbe);
         }
         </script></div>
 </div>

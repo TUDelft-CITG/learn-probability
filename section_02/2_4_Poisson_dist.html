@@ -154,23 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    Probability and Statistics Applications for Civil Engineers
+                    Course Introduction
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 1. General probability concepts</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">1. General probability concepts</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Must_know_%20probability_concepts.html">Must-know probability concepts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_01/Total_Probability_Theorem.html">Total Probability Theorem</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 2. Discrete random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">2. Discrete random variables</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="2_1_Bernoulli_dist.html">Bernoulli distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_2_Binomial_dist.html">Binomial distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_3_Geometric_dist.html">Geometric distribution</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Poisson distribution</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Section 3. Continuous random variables</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">3. Continuous random variables</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../section_03/3_1_Uniform_dist.html">Uniform distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../section_03/3_2_Exponential_dist.html">Exponential distribution</a></li>
@@ -337,15 +337,6 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="poisson-distribution">
 <h1>Poisson distribution<a class="headerlink" href="#poisson-distribution" title="Permalink to this heading">#</a></h1>
-<p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/Poisson_dist.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="400" height="230" /></p>
-<p>Welcome to the Poisson distribution module. At the end of this module, you will be able to identify distribution parameters and evaluate discrete probabilities for events using the Poisson distribution. Manipulate the distribution parameters to evaluate conditions relevant to Civil Engineering and Geosciences (CEG) applications</p>
-<p>This module is set up with a 3-unit format:</p>
-<ol class="arabic simple">
-<li><p>The basic theory of a specific concept.</p></li>
-<li><p>Example of how a specific concept is applied to a  CEG problem, through step-by-step explanations and short python code blocks.</p></li>
-<li><p>Introduction of a new problem, to practice using the method from unit 2.</p></li>
-</ol>
-<hr class="docutils" />
 <section id="theory">
 <h2>1. Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
 <p>In a Poisson distribution, the following assumptions are always satisfied:</p>
@@ -367,11 +358,11 @@ document.write(`
 <h2>2. Reliability of equipment at a pump station<a class="headerlink" href="#reliability-of-equipment-at-a-pump-station" title="Permalink to this heading">#</a></h2>
 <center><img title="a title" alt="Culvert figure" src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/Pumps.jpg" width="300" 
      height="200" /></center>
-<p>All the pumps at a pump station have been made to the same specifications by a single manufacturer. From tests made over a 6-week period, it has been ascertained that there are on average two breakdowns during each period. It is assumed that the failures occur randomly in time, the occurrences are independent, and the rate of failure is constant.</p>
+<p>All the pumps at a pump station have been made to the same specifications by a single manufacturer. From tests conducted over a 6-week period, it has been ascertained that there are on average two breakdowns during each period. It is assumed that the failures occur randomly in time, the occurrences are independent, and the rate of failure is constant.</p>
 <ol class="arabic simple">
 <li><p>What is the probability that the water treatment plant will have exactly three breakdowns over 6 weeks?</p></li>
 <li><p>A new plant manager assumes that the problem is not serious if there are no more than five breakdowns over 6 weeks. What is the probability of such an occurrence?</p></li>
-<li><p>The water treatment plant would close for repairs if there are more than 7 breakdowns. The plant manager assumes that the probability of that happening is less than 0.10. Is this correct?</p></li>
+<li><p>The water treatment plant would close for repairs if there were more than 7 breakdowns. The plant manager assumes that the probability of that happening is less than 0.10. Is this correct?</p></li>
 </ol>
 <p><strong>1. What is the probability that the water treatment plant will have exactly two breakdowns over 6 weeks?</strong></p>
 <p>There are on average three breakdowns during each period, i.e. <span class="math notranslate nohighlight">\(\nu = 3\)</span></p>
@@ -379,7 +370,7 @@ document.write(`
 <p>By using the homogeneous Poisson probability mass function:
 <span class="math notranslate nohighlight">\(P(X=2) =  \frac{3 ^{2}}{2!}\mathrm{exp}(-3)\)</span></p>
 <p>Thus, <span class="math notranslate nohighlight">\(P(X=2) = 0.224\)</span></p>
-<p>The probability that the water treatment plant will have exactly two breakdowns over 6 weeks is 0.224</p>
+<p>The probability that the water treatment plant will have exactly two breakdowns over 6 weeks is 0.224 or 22.4%</p>
 <p>We can easily obtain the solution using the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -402,8 +393,8 @@ document.write(`
 <p><strong>2. A new station manager assumes that the problem is not serious if there are no more than five breakdowns over 6 weeks. What is the probability of such an occurrence?</strong></p>
 <p>We are being asked for <span class="math notranslate nohighlight">\(P(X \leq 5)\)</span>. The homogenous Poisson model is applicable with parameter <span class="math notranslate nohighlight">\(\nu =3\)</span> and
 <span class="math notranslate nohighlight">\(P(X\leq5) = \sum_{x=0}^{5}\frac{3^{x}}{x!}\mathrm{exp}(-3)\)</span>
-<span class="math notranslate nohighlight">\(P(X\leq5) =  0.0498 + 0.1494 + 0.224 + 0.224+ 0.168 + 0.1008 = 0.916\)</span></p>
-<p>The probability that there are no more than five breakdowns over 6 weeks is 0.916</p>
+<span class="math notranslate nohighlight">\(P(X\leq5) = 0.0498 + 0.1494 + 0.224 + 0.224+ 0.168 + 0.1008 = 0.916\)</span></p>
+<p>The probability that there are no more than five breakdowns over 6 weeks is 0.916 or 91.6%</p>
 <p>We can easily obtain the solution using the following Python script:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -456,11 +447,11 @@ document.write(`
      height="200" /></center>
 <p>According to the U.S. National Oceanic and Atmospheric Administration on average there are 7.6 hurricanes per year (based on data from 2000 to 2021). Assume that the hurricane events are independent and the number of times an event occurs in an interval follows a Poisson distribution.</p>
 <p><strong>Please answer the following:</strong></p>
-<p>The following plots show three probability mass functions:</p>
+<p>The following plots show three probability mass functions, from left to right respectively; plot a, plot b and plot c:</p>
 <p><img src="https://raw.githubusercontent.com/mike-mendoza/-PSAM1_test/main/images/02_04_03_poisson_dist_pmf.png" alt="" style="display: block; margin-left: auto; margin-right: auto;" width="700" height="230" /></p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="eDKBigSMhOXf" data-shufflequestions="False"
+<div class="output text_html"><div id="DQlbcstwVdVM" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -622,7 +613,7 @@ document.write(`
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionseDKBigSMhOXf=[
+}</style></div><script type="application/javascript">var questionsDQlbcstwVdVM=[
     {
         "question": "What is the correct plot that describes the probability mass function of hurricane counts per year?",
         "type": "multiple_choice",
@@ -635,7 +626,7 @@ document.write(`
             {
                 "answer": "b)",
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             },
             {
                 "answer": "c)",
@@ -645,7 +636,7 @@ document.write(`
         ]
     },
     {
-        "question": "What is the probability of three hurricanes occurring in one year? Please round the answer to three decimal places.",
+        "question": "What is the probability of three hurricanes occurring in one year?",
         "type": "numeric",
         "precision": 3,
         "answers": [
@@ -653,12 +644,12 @@ document.write(`
                 "type": "value",
                 "value": 0.037,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability of at most three hurricanes occurring in one year? Please round the answer to three decimal places.",
+        "question": "What is the probability of at most three hurricanes occurring in one year?",
         "type": "numeric",
         "precision": 3,
         "answers": [
@@ -666,12 +657,12 @@ document.write(`
                 "type": "value",
                 "value": 0.055,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     },
     {
-        "question": "What is the probability of more than eight hurricanes occurring in one year? Please round the answer to three decimal places.",
+        "question": "What is the probability of more than eight hurricanes occurring in one year?",
         "type": "numeric",
         "precision": 3,
         "answers": [
@@ -679,7 +670,7 @@ document.write(`
                 "type": "value",
                 "value": 0.352,
                 "correct": true,
-                "feedback": "Correct."
+                "feedback": "Correct!"
             }
         ]
     }
@@ -1350,10 +1341,11 @@ function show_questions(json, mydiv) {
         //console.log(qa.type);
 
         var num_correct;
-        if (qa.type == "multiple_choice") {
+        if ((qa.type == "multiple_choice") || (qa.type == "many_choice") ) {
             num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
-        } else if (qa.type == "many_choice") {
-            num_correct = make_mc(qa, shuffle_answers, outerqDiv, qDiv, aDiv, id);
+            if ("answer_cols" in qa) {
+                aDiv.style.gridTemplateColumns = 'auto '.repeat(qa.answer_cols);
+            }
         } else if (qa.type == "numeric") {
             //console.log("numeric");
             make_numeric(qa, outerqDiv, qDiv, aDiv, id);
@@ -1417,9 +1409,13 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionseDKBigSMhOXf,  eDKBigSMhOXf);
+        show_questions(questionsDQlbcstwVdVM,  DQlbcstwVdVM);
         }
         </script></div>
+</div>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Important!</p>
+<p>Please round all answers to three decimal places.</p>
 </div>
 </section>
 </section>
