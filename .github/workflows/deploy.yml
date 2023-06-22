@@ -3,7 +3,7 @@ name: deploy
 on:
   pull_request:
     branches:
-      - publish
+      - main
     types:
       - closed
     paths:
