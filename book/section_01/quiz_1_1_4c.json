@@ -1,0 +1,34 @@
+[
+    {
+        "question": "Is this collectively exhaustive?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "Correct!!"
+            },
+            {
+                "answer": "FALSE",
+                "correct": false,
+                "feedback": " "
+            }
+        ]
+    },
+    {
+        "question": "Are these events mutually exclusive?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "Correct! The Saffir-Simpson scale is widely used to assign an intensity of category 1, 2, 3, 4 or 5 to cyclones in the Northern and Southern Hemisphere. This is nearly the same as the previous questions, except now we have more than two possible events -five, to be precise."
+            },
+            {
+                "answer": "FALSE",
+                "correct": false,
+                "feedback": " "
+            }
+        ]
+    }
+]
