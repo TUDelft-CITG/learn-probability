@@ -1,0 +1,97 @@
+[
+    {
+        "question": "How many events are indicated by the figure?",
+        "backgroundcolor":"black",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "0",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "1",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "2",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "3",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "Not enough information provided",
+                "correct": false,
+                "feedback": "False."
+            }
+        ]
+    },
+    {
+        "question": "What is the probability of 'not A' happening?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "0",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "0.5",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "0.6",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "$1-P(A)$",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "Not enough information provided",
+                "correct": false,
+                "feedback": "False."
+            }
+        ]
+    },
+    {
+        "question": "Do the areas for $A$ and $\\bar{A}$ overlap?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Yes",
+                "correct": false,
+                "feedback": "False."
+            },
+            {
+                "answer": "No",
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    },
+    {
+        "question": "Do the areas for $A$ and $\\bar{A}$ fill the entire sample space?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "Yes",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "No",
+                "correct": false,
+                "feedback": "False."
+            }
+        ]
+    }
+]

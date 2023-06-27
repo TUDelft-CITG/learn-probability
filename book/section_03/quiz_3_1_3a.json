@@ -1,0 +1,49 @@
+[
+    {
+        "question": "What is the correct plot that describes the probability density function of the total vehicle length? ",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "a)",
+                "correct": false,
+                "feedback": "False"
+            },
+            {
+                "answer": "b)",
+                "correct": false,
+                "feedback": "False"
+            },
+            {
+                "answer": "c)",
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    },
+    {
+        "question": "What is the probability that the total vehicle length of a randomly chosen T11O2 truck is larger than 14 m?",
+        "type": "numeric",
+        "precision": 2,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.62,
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    },
+    {
+        "question": "What is the expected value of the total vehicle length?",
+        "type": "numeric",
+        "precision": 2,
+        "answers": [
+            {
+                "type": "value",
+                "value": 14.35,
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    }
+]

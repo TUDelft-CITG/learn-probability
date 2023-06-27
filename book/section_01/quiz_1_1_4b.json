@@ -1,0 +1,34 @@
+[
+    {
+        "question": "Is this collectively exhaustive?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "Correct!!"
+            },
+            {
+                "answer": "FALSE",
+                "correct": false,
+                "feedback": " "
+            }
+        ]
+    },
+    {
+        "question": "Are these events mutually exclusive?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "TRUE",
+                "correct": true,
+                "feedback": "Note here that we don't specificy what causes the damage -it could be a typhoon, but it could be from other causes such as earthquakes or volcanoes."
+            },
+            {
+                "answer": "FALSE",
+                "correct": false,
+                "feedback": " "
+            }
+        ]
+    }
+]
