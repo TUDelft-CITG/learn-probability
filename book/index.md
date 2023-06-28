@@ -55,8 +55,8 @@ Each Section contains a number of Modules; although they are of different length
 
 Depending on your background in probability and statistics, most of the modules can be completed independently. 
 
-```{warning} This course is under development: new modules will be added during spring of 2023, and references to MUDE and other TU Delft-specific programs will be slowly phased out. We anticipate "version 2"to be release July 4, 2023.
-```
+<!-- ```{warning} This course is under development: new modules will be added during spring of 2023, and references to MUDE and other TU Delft-specific programs will be slowly phased out. We anticipate "version 2"to be release July 4, 2023.
+``` -->
 
 This course generally does not cover derivations of mathematical concepts, illustrating how the are used instead. If you need more background for a particular module, refer to the [Probability and Statistics courses](https://online-learning.tudelft.nl/topic/mastering-mathematics/) offered by our Mathematics department: the structure of the Sections are aligned, so it should be easy to find many more example problems for these concepts!
 
