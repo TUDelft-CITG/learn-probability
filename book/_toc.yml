@@ -22,15 +22,15 @@ parts:
   - file: section_03/3_2_Exponential_dist
   - file: section_03/3_3_Normal_dist
   
-- caption: 4. Maximum Likelihood Estimation
-  chapters:
-  - file: new_prob_material/MLE_1
-  - file: new_prob_material/MLE_2
-  - file: new_prob_material/MLE_exercises
+# - caption: 4. Maximum Likelihood Estimation
+#   chapters:
+#   - file: new_prob_material/MLE_1
+#   - file: new_prob_material/MLE_2
+#   - file: new_prob_material/MLE_exercises
   
-- caption: 5. Joint, Independence and Conditional distributions 
-  chapters:
-  - file: new_prob_material/jointDistribution
-  - file: new_prob_material/independence+conditional
+# - caption: 5. Joint, Independence and Conditional distributions 
+#   chapters:
+#   - file: new_prob_material/jointDistribution
+#   - file: new_prob_material/independence+conditional
 
   
