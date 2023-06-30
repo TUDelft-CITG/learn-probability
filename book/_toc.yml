@@ -28,10 +28,18 @@ parts:
   - file: section_03/3_2_Exponential_dist
   - file: section_03/3_3_Normal_dist
   - file: section_03/bug_report.md
-
+  
+- caption: 4. Maximum Likelihood Estimation 
+  chapters:
+  - file: new_prob_material/MLE_1
+  - file: new_prob_material/MLE_2
+  
+- caption: 5. Joint, Independence and Conditional distributions 
+  chapters:
+  - file: new_prob_material/independence+conditional
 - caption: End of course survey
   chapters:
-  - file: End-of-course-survey.md  
+  - file: End-of-course-survey.md 
   
 # - caption: 4. Maximum Likelihood Estimation
 #   chapters:
