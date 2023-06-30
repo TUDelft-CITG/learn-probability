@@ -1,6 +1,7 @@
 # Probability and Statistics Applications for Engineers
 
-<img src="https://raw.githubusercontent.com/TUDelft-CITG/learn-probability/main/book/logo 2 sketch.png" width=80 style="float: right;"/> 
+<img src="https://raw.githubusercontent.com/TUDelft-CITG/learn-probability/main/book/logo 2 sketch.png" width=80 style="float: right;"/>
+
 [![Jupyter Book Badge](https://raw.githubusercontent.com/executablebooks/jupyter-book/47e06598ef05bd429467a7de66a7fb3a83e89c2f/docs/images/badge.svg)](https://jupyterbook.org)
 
 This repository contains the source for the website [Probability and Statistics Applications for Engineers](https://tudelft-citg.github.io/learn-probability/). The website is a self-paced online course, which is meant to be a way to refresh knowledge of BSc-level probability and statistics concepts. This course was originally developed for students in the fields of: Civil Engineering, Environmental Engineering, Applied Earth Sciences and Construction Management and Engineering. These programs are part of the faculty of Civil Engineering and Geosciences at Delft University of Technology in the Netherlands. We try to draw on examples from these fields, but the course contents should be relevant for any engineering or applied geoscience discipline.
