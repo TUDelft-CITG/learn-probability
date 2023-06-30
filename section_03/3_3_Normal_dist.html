@@ -175,6 +175,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Normal distribution</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bug_report.html">Bug Report Issue Form (optional)</a></li>
 </ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Maximum Likelihood Estimation</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../new_prob_material/MLE_1.html">Maximum Likelihood Estimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../new_prob_material/MLE_2.html">Maximum Likelihood Estimation 2</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">5. Joint, Independence and Conditional distributions</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../new_prob_material/independence%2Bconditional.html">Independence and Conditioning</a></li>
+</ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">End of course survey</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../End-of-course-survey.html">End of course survey</a></li>
@@ -389,14 +398,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">norm</span>            <span class="c1">#import normal function</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">45</span><span class="o">/</span><span class="mi">50</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">mu</span> <span class="o">=</span> <span class="mi">16</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;scipy&#39;
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The water content is exceeded in 45 tests out of 50 is 13.44 %
 </pre></div>
 </div>
 </div>
@@ -481,9 +483,13 @@ document.write(`
 </div>
 <p>The video that you saw is a steel reinforcing bar tensile strength test.  According to the laboratory test reported in the scientific publication <a class="reference external" href="https://doi.org/10.1016/j.engstruct.2019.03.011">“Reliability analysis of reinforced concrete vehicle bridges columns”</a>. The ultimate tensile strength <span class="math notranslate nohighlight">\(f_u\)</span> of the steel bars in the experiment, is described with a Normal distribution with a mean of 716.14 MPa and a standard deviation of 46.5 MPa.</p>
 <p><strong>Please answer the following:</strong></p>
+<div class="tip dropdown admonition">
+<p class="admonition-title">Important!</p>
+<p>Answer all questions in three decimal places.</p>
+</div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output text_html"><div id="QSDFxqJsNkfY" data-shufflequestions="False"
+<div class="output text_html"><div id="mAIAylUEfsWf" data-shufflequestions="False"
                data-shuffleanswers="True"
                data-preserveresponses="false"
                data-numquestions="1000000"> <style>:root {
@@ -645,7 +651,7 @@ document.write(`
     100% {
         background-color: var(--correct-green);
     }
-}</style></div><script type="application/javascript">var questionsQSDFxqJsNkfY=[
+}</style></div><script type="application/javascript">var questionsmAIAylUEfsWf=[
     {
         "question": " $P(X\\leq 623.14) = P(X \\geq 809.14)$",
         "type": "multiple_choice",
@@ -1439,13 +1445,9 @@ if (typeof version == 'undefined') {
 }
 
         {
-        show_questions(questionsQSDFxqJsNkfY,  QSDFxqJsNkfY);
+        show_questions(questionsmAIAylUEfsWf,  mAIAylUEfsWf);
         }
         </script></div>
-</div>
-<div class="tip dropdown admonition">
-<p class="admonition-title">Important!</p>
-<p>Answer all questions in three decimal places.</p>
 </div>
 </section>
 </section>

@@ -63,11 +63,9 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'new_prob_material/independence+conditional';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'new_prob_material/independence+conditional copy';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="End of course survey" href="../End-of-course-survey.html" />
-    <link rel="prev" title="Maximum Likelihood Estimation 2" href="MLE_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -181,8 +179,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="MLE_2.html">Maximum Likelihood Estimation 2</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">5. Joint, Independence and Conditional distributions</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Independence and Conditioning</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="independence%2Bconditional.html">Independence and Conditioning</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">End of course survey</span></p>
 <ul class="nav bd-sidenav">
@@ -241,7 +239,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/new_prob_material/independence+conditional.ipynb" target="_blank"
+      <li><a href="../_sources/new_prob_material/independence+conditional copy.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -333,7 +331,14 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Independence and Conditioning</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theory">1. Theory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-stuff">2. Lab stuff</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Independence and Conditioning</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1. Theory</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-analysis-in-civil-engineering">2. Probability Analysis in Civil Engineering</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-scenarios-in-civil-engineering">3.Probability Scenarios in Civil Engineering</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-of-x-and-y-within-given-ranges">1. Probability of X and Y within given ranges</a></li>
@@ -343,6 +348,9 @@ document.write(`
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -355,13 +363,101 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="independence-and-conditioning">
 <h1>Independence and Conditioning<a class="headerlink" href="#independence-and-conditioning" title="Permalink to this heading">#</a></h1>
+<p>Welcome to the Independence and Conditioning module.  At the end of this module, you will be able to evaluate probabilities for events for a given (joint) probability distribution using knowledge on independence and conditioning. Manipulate the distribution parameters to evaluate conditions relevant to Civil Engineering and Geosciences (CEG) applications.</p>
+<p>This module is set up with a 3-unit format:</p>
+<ol class="arabic simple">
+<li><p>The basic theory of a specific concept.</p></li>
+<li><p>Example of how a specific concept is applied to a  CEG problem, through step-by-step explanations and short python code blocks.</p></li>
+<li><p>Introduction of a new problem, to practice using the method from unit 2.</p></li>
+</ol>
+<hr class="docutils" />
 <section id="theory">
 <h2>1. Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
-<p>In this part we will discuss two topics:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Independence
-2. Conditional probability 
-</pre></div>
-</div>
+<p>independence stuff:</p>
+<p><span class="math notranslate nohighlight">\(F(x, y) = P(x&lt;X \bigcap y&lt;Y ) = P(x&lt;X)P(y&lt;Y) = F(x)F(y)\)</span></p>
+<p>conditional stuff:</p>
+<p><span class="math notranslate nohighlight">\(P(x&lt;X \vert y&lt;Y) = \frac {P(x&lt;X \bigcap y&lt;Y )}{P(y&lt;Y)} = \frac{F(x, y)}{F(y)}\)</span></p>
+<p><span class="math notranslate nohighlight">\( F(x, y) = F(x \vert y)F(y) = F(y \vert x)F(x) \)</span></p>
+</section>
+<hr class="docutils" />
+<section id="lab-stuff">
+<h2>2. Lab stuff<a class="headerlink" href="#lab-stuff" title="Permalink to this heading">#</a></h2>
+<p>Exercise is from prob design exam April 2019</p>
+<p><span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> are two (unitless) quantities that have been measured in the lab in order to investigate certain properties. Theoretical cumulative distribution functions for <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> have been fitted satisfactorily to data obrained after many years of measurements. These are given by <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(G\)</span> below:</p>
+<p><span class="math notranslate nohighlight">\(F(x) =\left\{\begin{matrix}
+        0 &amp; \, x &lt; -1 \\
+        \frac{x+1}{2} &amp; \, -1 \leq x \leq 1 \\
+        1 &amp; \, x &gt;1
+    \end{matrix}\right.\)</span></p>
+<p><span class="math notranslate nohighlight">\(G(y) =\left\{\begin{matrix}
+        0 &amp; \, y &lt; 0 \\
+        1-e^{-y} &amp; \, y \geq 0 
+    \end{matrix}\right.\)</span></p>
+<p>Assume <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> are independent.</p>
+<ol class="arabic simple">
+<li><p>What is <span class="math notranslate nohighlight">\(P(X \leq -0.1, Y \leq 1)\)</span>?</p></li>
+<li><p>What is <span class="math notranslate nohighlight">\(P(X &gt; 0.8 \vert Y &gt;10)\)</span>?</p></li>
+</ol>
+<p>As it turns out, the joint cumulative distribution function of <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> (denoted as <span class="math notranslate nohighlight">\(H\)</span>) has also been approximated from measurements with sufficient accuracy and is given</p>
+<p><span class="math notranslate nohighlight">\(H(x, y) =\left\{\begin{matrix}
+\frac{(x+1)(e^y-1)}{x+2e^y-1} &amp; \, (x,y)\in [-1, 1] \times [0,\infty] \\
+1-e^{-y} &amp; \, (x,y)\in (1, \infty] \times [0,\infty] \\
+0 &amp; \, \mathrm{elsewhere}
+\end{matrix}\right. \)</span></p>
+<ol class="arabic simple" start="3">
+<li><p>What is <span class="math notranslate nohighlight">\(P(X \geq 0.8, Y \geq 4.6)\)</span> in the case the joint distribtution is as above?</p></li>
+<li><p>What is <span class="math notranslate nohighlight">\(P(X \geq 0.8 \vert Y \geq 4.6)\)</span> in the case the joint distribtution is as above?</p></li>
+</ol>
+<p><strong>1. What is <span class="math notranslate nohighlight">\(P(X \leq -0.1, Y \leq 1)\)</span>?</strong></p>
+<p>Since we assume that <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> are independent, we have to solve <span class="math notranslate nohighlight">\(P(x&lt;X \bigcap y&lt;Y ) = P(x&lt;X)P(y&lt;Y) = F(x)G(y)\)</span>.</p>
+<p>Substituting the values into this equation, we have:</p>
+<p><span class="math notranslate nohighlight">\(F(-0.1)G(1) = \frac{-0.1+1}{2} (1-e^{-1}) = 0.28\)</span></p>
+<p><strong>2. What is <span class="math notranslate nohighlight">\(P(X &gt; 0.8 \vert Y &gt;10)\)</span>?</strong></p>
+<p>We know that <span class="math notranslate nohighlight">\(P(X&gt;x \vert Y&gt;y) = \frac {P(X&gt;x \bigcap Y&gt;y )}{P(Y&gt;y)}\)</span>, and with the assumption of <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> being independent, <span class="math notranslate nohighlight">\(P(X&gt;x \bigcap Y&gt;y ) = P(X&gt;x)P(Y&gt;y)\)</span>.</p>
+<p>Therefore, <span class="math notranslate nohighlight">\(P(X&gt;x \vert Y&gt;y) = \frac {P(X&gt;x)P(Y&gt;y)}{P(Y&gt;y)} = P(X&gt;x)\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(P(X&gt;0.8 \vert Y&gt;10) = P(X&gt;0.8) = 1-F(0.8) = 1 - \frac{0.8+1}{2} = 0.1\)</span></p>
+<p>We can see that the probability of <span class="math notranslate nohighlight">\(X&gt;x\)</span> does not depend on the value of <span class="math notranslate nohighlight">\(Y\)</span>, since these variables are independent. Now let’s see what happens when the variables are no longer independent!</p>
+<p><strong>3. What is <span class="math notranslate nohighlight">\(P(X&gt;0.8, Y&gt;4.6)\)</span> in the case the joint distribtution is as above?</strong></p>
+<p>insert pic?</p>
+<p>Looking at the solution space, we can rewrite the equation in the following way:</p>
+<p><span class="math notranslate nohighlight">\(P(X&gt;x \bigcap Y&gt;y) = 1 - (P(X \leq x) + P(Y \leq y) - P(X \leq x \bigcap Y \leq y)\)</span></p>
+<p>Now <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> are not independent anymore, the joint distribution <span class="math notranslate nohighlight">\(P(X \leq x \bigcap Y \leq y)\)</span> is given by <span class="math notranslate nohighlight">\(H(x,y)\)</span>. The equation then becomes:</p>
+<p><span class="math notranslate nohighlight">\(P(X&gt;0.8 \bigcap Y&gt;4.6) = 1 - (F(0.8) + G(4.6) - H(0.8,4.6)) = 1 - (\frac{0.8+1}{2} + 1-e^{-4.6} - frac{(0.8+1)(e^{4.6}-1)}{0.8+2e^{4.6}-1}) = 0.0019\)</span></p>
+<p><strong>4. What is <span class="math notranslate nohighlight">\(P(X&gt;0.8 \vert Y&gt;4.6)\)</span> in the case the joint distribtution is as above?</strong></p>
+<p>Just as in Question 2, <span class="math notranslate nohighlight">\(P(X&gt;x \vert Y&gt;y) = \frac {P(X&gt;x \bigcap Y&gt;y )}{P(Y&gt;y)}\)</span>, so we have the following problem to solve:</p>
+<p><span class="math notranslate nohighlight">\(P(X&gt;0.8 \vert Y&gt;4.6) = \frac {P(X&gt;0.8 \bigcap Y&gt;4.6 )}{P(Y&gt;4.6)} = \frac {P(X&gt;0.8 \bigcap Y&gt;4.6 )}{1-P(Y \leq 4.6)}\)</span>.</p>
+<p>We know from Question 3 that <span class="math notranslate nohighlight">\(P(X&gt;0.8 \bigcap Y&gt;4.6) = 0.0019\)</span>, so the equation becomes:</p>
+<p><span class="math notranslate nohighlight">\(P(X&gt;0.8 \vert Y&gt;4.6) = \frac{0.0019}{1-0.9899} = 0.1931\)</span></p>
+<p>Notice how the probability of <span class="math notranslate nohighlight">\(X&gt;0.8\)</span> increased when the variables <span class="math notranslate nohighlight">\(X\)</span> and <span class="math notranslate nohighlight">\(Y\)</span> are made dependent on each other. This will be important when correlation is discussed in later sections.</p>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h2>3.<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<p>can this be discrete? eg Q3 Jan 2019</p>
+<p>Make story of use example in civil engineering with following inputs:</p>
+<p>The joint CDF function is given by:</p>
+<p><span class="math notranslate nohighlight">\(F_{X Y}(x, y) = \frac{1}{9}x^4y + \frac{1}{6}x^2y^2 + \frac{1}{3}x^3y^2 + \frac{1}{3}xy^3 + y^2\)</span> for <span class="math notranslate nohighlight">\(0\leq x,y \leq 1\)</span></p>
+<p>Marginal distribution function of y is given by:</p>
+<p><span class="math notranslate nohighlight">\(F_{Y}(x, y) = \frac{4}{9}x^3y + \frac{1}{3}xy^2 + x^2y^2 + \frac{1}{3}y^3\)</span></p>
+<p>Marginal dribution function of x is given by:</p>
+<p><span class="math notranslate nohighlight">\(F_{X}(x, y) = \frac{1}{9}x^4 + \frac{1}{3}x^2y + \frac{2}{3}x^3y + xy^2 + 2y\)</span></p>
+<p>Ahmed edits:</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1>Independence and Conditioning<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h1>
+<p>Insert imgage</p>
+<p>Welcome to the Independence and Conditioning module.  At the end of this module, you will be able to evaluate probabilities for events for a given (joint) probability distribution using knowledge on independence and conditioning. Manipulate the distribution parameters to evaluate conditions relevant to Civil Engineering and Geosciences (CEG) applications.</p>
+<p>This module is set up with a 3-unit format:</p>
+<ol class="arabic simple">
+<li><p>The basic theory of a specific concept.</p></li>
+<li><p>Example of how a specific concept is applied to a  CEG problem, through step-by-step explanations and short python code blocks.</p></li>
+<li><p>Introduction of a new problem, to practice using the method from unit 2.</p></li>
+</ol>
+<hr class="docutils" />
+<section id="id3">
+<h2>1. Theory<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>independence stuff:</p>
 <p><strong>Independence</strong> is a fundamental concept that describes the relationship between two or more random variables. When two random variables, X and Y, are independent, it means that the occurrence or value of one variable does not influence the occurrence or value of the other variable.</p>
 <p>Formally, X and Y are considered independent if and only if the joint probability function (or cumulative distribution function) can be factorized into the product of their marginal probability functions (or cumulative distribution functions).</p>
 <p>Mathematically, for independent variables X and Y, the following relationship holds:</p>
@@ -379,7 +475,7 @@ This equation further simplifies the relationship between the joint cumulative d
 </ol>
 </div>
 <hr class="docutils" />
-<p><strong>Conditional probability</strong> is a measure of the probability of an event occurring given that another event has already occurred.  The following relationship holds for events X and Y:</p>
+<p><strong>Conditional</strong> probability is a measure of the probability of an event occurring given that another event has already occurred.  The following relationship holds for events X and Y:</p>
 <p><span class="math notranslate nohighlight">\(P(x&lt;X \vert y&lt;Y) = \frac {P(x&lt;X \bigcap y&lt;Y )}{P(y&lt;Y)} = \frac{F(x, y)}{F(y)}\)</span></p>
 <p><span class="math notranslate nohighlight">\( F(x, y) = F(x \vert y)F(y) = F(y \vert x)F(x) \)</span></p>
 <p>Where:</p>
@@ -404,7 +500,7 @@ This formula expresses the joint CDF of X and Y in terms of the conditional CDF 
 </section>
 <section id="probability-analysis-in-civil-engineering">
 <h2>2. Probability Analysis in Civil Engineering<a class="headerlink" href="#probability-analysis-in-civil-engineering" title="Permalink to this heading">#</a></h2>
-<p><u> <em>Scenario 1: Independent X and Y</em> </u></p>
+<p><u> <em>Scenario 1: Independence of X and Y</em> </u></p>
 <p>In a civil engineering project, engineers investigate the properties of two measured quantities, X and Y. Theoretical cumulative distribution functions, F(x) and G(y), have been fitted to the data obtained from years of measurements. Assuming X and Y are independent, the engineers can perform probability analysis to gain insights into structural integrity.</p>
 <p>The cumulative distribution function for X is given by:</p>
 <div class="math notranslate nohighlight">
@@ -465,7 +561,7 @@ This formula expresses the joint CDF of X and Y in terms of the conditional CDF 
 <p>Let’s explore some probability scenarios related to civil engineering using these functions:</p>
 <section id="probability-of-x-and-y-within-given-ranges">
 <h3>1. Probability of X and Y within given ranges<a class="headerlink" href="#probability-of-x-and-y-within-given-ranges" title="Permalink to this heading">#</a></h3>
-<p>In civil engineering, it is often necessary to analyze the behavior of multiple variables within specified ranges. Suppose X represents the compressive strength of a concrete sample and Y represents the load applied to a structural member. What is the probability that the compressive strength X is less than or equal to 0.5 units (e.g. MPa) and the load Y is less than or equal to 0.7 units (e.g. kN)?</p>
+<p>In civil engineering, it is often necessary to analyze the behavior of multiple variables within specified ranges. Suppose X represents the compressive strength of a concrete sample and Y represents the load applied to a structural member. What is the probability that the compressive strength X is less than or equal to 0.5 units (e.g., MPa) and the load Y is less than or equal to 0.7 units (e.g., kN)?</p>
 </section>
 <section id="conditional-probability">
 <h3>2. Conditional Probability<a class="headerlink" href="#conditional-probability" title="Permalink to this heading">#</a></h3>
@@ -473,15 +569,16 @@ This formula expresses the joint CDF of X and Y in terms of the conditional CDF 
 </section>
 <section id="joint-probability">
 <h3>3. Joint Probability<a class="headerlink" href="#joint-probability" title="Permalink to this heading">#</a></h3>
-<p>Another important aspect in civil engineering is evaluating the joint probability of variables X and Y. What is the probability that X, representing the soil settlement, is greater than or equal to 0.4 units (e.g. mm) and Y, representing the applied surcharge, is less than or equal to 2 units (e.g. kPa)?</p>
+<p>Another important aspect in civil engineering is evaluating the joint probability of variables X and Y. What is the probability that X, representing the soil settlement, is greater than or equal to 0.4 units (e.g., mm) and Y, representing the applied surcharge, is less than or equal to 2 units (e.g., kPa)?</p>
 </section>
 <section id="conditional-joint-probability">
 <h3>4. Conditional Joint Probability<a class="headerlink" href="#conditional-joint-probability" title="Permalink to this heading">#</a></h3>
 <p>Understanding conditional joint probabilities is essential in civil engineering for evaluating the behavior of multiple variables under specific conditions. What is the probability that X, representing the deflection of a structural element, is greater than or equal to 0.5 units given that Y, representing the applied load, is greater than or equal to 0.8 units?</p>
+<p>These probability scenarios involve variables relevant to civil engineering applications. By exploring and analyzing these probabilities, civil engineers can make informed decisions, optimize designs, and ensure the safety and performance of structures.</p>
 <div class="tip dropdown admonition">
 <p class="admonition-title">Answers!</p>
 <p><strong>1. Probability of X and Y within given ranges:</strong></p>
-<p>To find the probability that X is less than or equal to 0.5 units (e.g. MPa) and Y is less than or equal to 0.7 units (e.g. kN), we need to evaluate the joint cumulative distribution function (CDF) <span class="math notranslate nohighlight">\(F_{XY}(x, y)\)</span> at these values:</p>
+<p>To find the probability that X is less than or equal to 0.5 units (e.g., MPa) and Y is less than or equal to 0.7 units (e.g., kN), we need to evaluate the joint cumulative distribution function (CDF) <span class="math notranslate nohighlight">\(F_{XY}(x, y)\)</span> at these values:</p>
 <p><span class="math notranslate nohighlight">\(P(X \leq 0.5, Y \leq 0.7) = F_{XY}(0.5, 0.7)\)</span></p>
 <p>Substituting the values into the given CDF formula:
 <span class="math notranslate nohighlight">\(P(X \leq 0.5, Y \leq 0.7) = \left(\frac{1}{9}\right)(0.5^4)(0.7) + \left(\frac{1}{6}\right)(0.5^2)(0.7^2) + \left(\frac{1}{3}\right)(0.5^3)(0.7^2) \)</span>
@@ -502,7 +599,7 @@ This formula expresses the joint CDF of X and Y in terms of the conditional CDF 
 <span class="math notranslate nohighlight">\(P(X &gt; 0.3 | Y = 0.6) = 0.25\)</span></p>
 <p>Therefore, the probability that X is greater than 0.3 units given that Y is equal to 0.6 units is 0.25.</p>
 <p><strong>3. Joint Probability:</strong></p>
-<p>The probability that X, representing the soil settlement, is greater than or equal to 0.4 units (e.g. mm), and Y, representing the applied surcharge, is less than or equal to 2 units (e.g. kPa), can be calculated by evaluating the joint cumulative distribution function (CDF) <span class="math notranslate nohighlight">\(F_{XY}(x, y)\)</span> at these values:</p>
+<p>The probability that X, representing the soil settlement, is greater than or equal to 0.4 units (e.g., mm), and Y, representing the applied surcharge, is less than or equal to 2 units (e.g., kPa), can be calculated by evaluating the joint cumulative distribution function (CDF) <span class="math notranslate nohighlight">\(F_{XY}(x, y)\)</span> at these values:</p>
 <p><span class="math notranslate nohighlight">\(P(X \geq 0.4, Y \leq 2) = F_{XY}(0.4, 2)\)</span></p>
 <p>Substituting the values into the given CDF formula:
 <span class="math notranslate nohighlight">\(P(X \geq 0.4, Y \leq 2) = \left(\frac{1}{9}\right)(0.4^4)(2) + \left(\frac{1}{6}\right)(0.4^2)(2^2) + \left(\frac{1}{3}\right)(0.4^3)(2^2) + \left(\frac{1}{3}\right)(0.4)(2^3) + (2^2)\)</span></p>
@@ -558,24 +655,6 @@ This formula expresses the joint CDF of X and Y in terms of the conditional CDF 
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="MLE_2.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Maximum Likelihood Estimation 2</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../End-of-course-survey.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">End of course survey</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
@@ -594,7 +673,14 @@ This formula expresses the joint CDF of X and Y in terms of the conditional CDF 
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Independence and Conditioning</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theory">1. Theory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lab-stuff">2. Lab stuff</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">3.</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Independence and Conditioning</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">1. Theory</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-analysis-in-civil-engineering">2. Probability Analysis in Civil Engineering</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-scenarios-in-civil-engineering">3.Probability Scenarios in Civil Engineering</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probability-of-x-and-y-within-given-ranges">1. Probability of X and Y within given ranges</a></li>
@@ -604,6 +690,9 @@ This formula expresses the joint CDF of X and Y in terms of the conditional CDF 
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
