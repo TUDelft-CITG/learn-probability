@@ -1,13 +1,18 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
-root: index.md
+root: intro.md
 format: jb-book
 
 parts:
+- caption: Introduction
+  chapters:
+  - file: intro_in_toc.md
+    title: Course Overview
 - caption: 1. General probability concepts
   chapters:
   - file: section_01/Must_know_ probability_concepts
   - file: section_01/Total_Probability_Theorem
+  - file: section_01/bug_report.md
 
 - caption: 2. Discrete random variables
   chapters:
@@ -15,22 +20,26 @@ parts:
   - file: section_02/2_2_Binomial_dist
   - file: section_02/2_3_Geometric_dist
   - file: section_02/2_4_Poisson_dist
+  - file: section_02/bug_report.md
 
 - caption: 3. Continuous random variables
   chapters:
   - file: section_03/3_1_Uniform_dist
   - file: section_03/3_2_Exponential_dist
   - file: section_03/3_3_Normal_dist
-
+  - file: section_03/bug_report.md
+  
 - caption: 4. Maximum Likelihood Estimation 
   chapters:
   - file: new_prob_material/MLE_1
   - file: new_prob_material/MLE_2
-
+  
 - caption: 5. Joint, Independence and Conditional distributions 
   chapters:
   - file: new_prob_material/independence+conditional
-  
+- caption: End of course survey
+  chapters:
+  - file: End-of-course-survey.md 
   
 # - caption: 4. Maximum Likelihood Estimation
 #   chapters:
