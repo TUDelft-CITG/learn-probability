@@ -12,6 +12,7 @@ parts:
   chapters:
   - file: section_01/Must_know_ probability_concepts
   - file: section_01/Total_Probability_Theorem
+  - file: section_01/bug_report.md
 
 - caption: 2. Discrete random variables
   chapters:
@@ -19,12 +20,18 @@ parts:
   - file: section_02/2_2_Binomial_dist
   - file: section_02/2_3_Geometric_dist
   - file: section_02/2_4_Poisson_dist
+  - file: section_02/bug_report.md
 
 - caption: 3. Continuous random variables
   chapters:
   - file: section_03/3_1_Uniform_dist
   - file: section_03/3_2_Exponential_dist
   - file: section_03/3_3_Normal_dist
+  - file: section_03/bug_report.md
+
+- caption: End of course survey
+  chapters:
+  - file: End-of-course-survey.md  
   
 # - caption: 4. Maximum Likelihood Estimation
 #   chapters:
