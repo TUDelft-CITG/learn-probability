@@ -1,9 +1,13 @@
 # Table of contents
 # Learn more at https://jupyterbook.org/customize/toc.html
-root: index.md
+root: intro.md
 format: jb-book
 
 parts:
+- caption: Introduction
+  chapters:
+  - file: intro_in_toc.md
+    title: Course Overview
 - caption: 1. General probability concepts
   chapters:
   - file: section_01/Must_know_ probability_concepts
