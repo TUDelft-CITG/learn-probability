@@ -1,10 +1,10 @@
-# Course Introduction
 
-Welcome to **Probability and Statistics Applications for Civil Engineers**. We're excited to have you join us in this self-paced online course, which is designed to bridge the gap between introductory and more advanced courses in probability and statistics.
 
-```{admonition} The label "Civil Engineering" is an over-simplification!
+Welcome to the online course **Probability and Statistics Applications for Engineers**. We're excited to have you join us in this self-paced online course, which is designed to bridge the gap between introductory and more advanced courses in probability and statistics.
+
+```{admonition} What do we mean by "engineers"?
 :class: dropdown
-The field of civil engineering has changed significantly over the past decades. While we wish we could have included titles such as "environmental engineering," "construction management," "engineering geology" or similar fields, please forgive us for adopting the label "civil engineering" for the sake of simplicity.
+This course was originally developed for students in: Civil Engineering, Environmental Engineering, Applied Earth Sciences and Construction Management and Engineering. These programs are part of the faculty of Civil Engineering and Geosciences at Delft University of Technology in the Netherlands. We try to draw on examples from these fields, but the course contents should be relevant for any engineering or applied geoscience discipline.
 ```
 
 This course was originally designed for incoming students to several MSc programs at TU Delft: especially those who have may have taken a high school or university-level course on probability and statistics, but may need to brush up on these concepts. Have you had trouble in the past due to the theoretical or math-oriented nature of these problems? Then this course is for you!
@@ -27,13 +27,13 @@ CME is an interfaculty program between 1) CEG, 2) Architecture & the Built Envir
 For all students in the CEG faculty: if you have *never* taken a university-level course in probability and statistics you are strongly recommended to complete the [Probability and Statistics courses](https://online-learning.tudelft.nl/topic/mastering-mathematics/) offered by our Mathematics department prior to beginning your MSc program---past experience has shown this to help students in all of our MSc programs get through the first semester of studies more easily.
 ```
 
-This course assumes some prior knowledge of probability and statistics. Although most of the example calculations illustrated in this course use Python, prior experience with this programming language is not necessary. Python is used because it is adopted in many university-level engineering programs, so we want you to feel comfortable with seeing and making calculations using code before the academic year begins. In other words: in this course, think of Python as a powerful calculator, and you will always be able to understand what the code is doing simply by reading it (not running it). If you are interested in Python, check out our companion course, [Python Applications for Civil Engineers](https://tudelft-citg.github.io/learn-python/)---it is set up in a similar format to this course.
+This course assumes some prior knowledge of probability and statistics. Although most of the example calculations illustrated in this course use Python, prior experience with this programming language is not necessary. Python is used because it is adopted in many university-level engineering programs, so we want you to feel comfortable with seeing and making calculations using code before the academic year begins. In other words: in this course, think of Python as a powerful calculator, and you will always be able to understand what the code is doing simply by reading it (not running it). If you are interested in Python, check out our companion course, [Python Applications for Engineers](https://tudelft-citg.github.io/learn-python/)---it is set up in a similar format to this course.
 
 This course will enable you to...
 
-* Identify important probability and statistics theorems and methods that are commonly used for applications in civil engineering
+* Identify important probability and statistics theorems and methods that are commonly used for applications in engineering
 
-* Solve basic probability and statistic problems for applications in civil engineering using concepts such as total probability, Bayes' rule, continuous and discrete distributions, etc.
+* Solve basic probability and statistic problems for applications in engineering using concepts such as total probability, Bayes' rule, continuous and discrete distributions, etc.
 
 * Have sufficient prior probability and statistics knowledge to succeed in a MSc-level engineering program at TU Delft.
 
@@ -50,7 +50,7 @@ Section 3. Continuous random variables.
 Each Section contains a number of Modules; although they are of different lengths, all are set up with a consistent 3-unit format:
 
 1.    The basic theory of a specific concept.
-2.    Example of a specific concept applied to a civil engineering problem, through step-by-step explanations and short python code blocks.
+2.    Example of a specific concept applied to an engineering problem, through step-by-step explanations and short python code blocks.
 3.    Introduction of a new problem, to practice applying the method from unit 2.
 
 Depending on your background in probability and statistics, most of the modules can be completed independently. 

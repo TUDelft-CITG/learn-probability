@@ -3,7 +3,7 @@
 
 title: Probability and Statistics Applications for Civil Engineers
 author: Robert Lanzafame, Miguel Mendoza Lugo and Patricia Mares Nasarre
-logo: logo 2.png
+logo: logo sketch and tud.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -29,6 +29,7 @@ latex:
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
   announcement: "⚠️ This is not the final version of the book! The new version will be ready by July 1.⚠️"
+  home_page_in_navbar: false
   extra_navbar: |
       <div>
           <IMG SRC="https://raw.githubusercontent.com/mbakker7/exploratory_computing_with_python/master/tudelft_logo.png" WIDTH=200 ALIGN="center">
