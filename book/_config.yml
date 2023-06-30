@@ -28,7 +28,7 @@ latex:
 # Add GitHub buttons to your book
 # See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
 html:
-  announcement: "⚠️ This is not the final version of the book! The new version will be ready by July 1.⚠️"
+#  announcement: "⚠️ This is not the final version of the book! The new version will be ready by July 1.⚠️"
   home_page_in_navbar: false
   extra_navbar: |
       <div>
