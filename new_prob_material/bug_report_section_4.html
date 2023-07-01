@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Maximum Likelihood Estimation &#8212; Probability and Statistics Applications for Civil Engineers</title>
+    <title>Bug Report Issue Form (optional) &#8212; Probability and Statistics Applications for Civil Engineers</title>
   
   
   
@@ -61,13 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'new_prob_material/MLE_1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'new_prob_material/bug_report_section_4';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Maximum Likelihood Estimation 2" href="MLE_2.html" />
-    <link rel="prev" title="Bug Report Issue Form (optional)" href="../section_03/bug_report.html" />
+    <link rel="next" title="Independence and Conditioning" href="independence%2Bconditional.html" />
+    <link rel="prev" title="Maximum Likelihood Estimation 2" href="MLE_2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -177,9 +175,9 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">4. Maximum Likelihood Estimation</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Maximum Likelihood Estimation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="MLE_1.html">Maximum Likelihood Estimation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="MLE_2.html">Maximum Likelihood Estimation 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bug_report_section_4.html">Bug Report Issue Form (optional)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Bug Report Issue Form (optional)</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">5. Joint, Independence and Conditional distributions</span></p>
 <ul class="nav bd-sidenav">
@@ -243,7 +241,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/new_prob_material/MLE_1.ipynb" target="_blank"
+      <li><a href="../_sources/new_prob_material/bug_report_section_4.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -253,7 +251,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="btn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="btn__text-container">.ipynb</span>
+<span class="btn__text-container">.md</span>
 </a>
 </li>
       
@@ -312,9 +310,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -325,21 +321,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Maximum Likelihood Estimation</h1>
+    <h1>Bug Report Issue Form (optional)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theory">1. Theory</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exponential-distribution">2. Exponential Distribution</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-mle-of-exponential-distribution">3. Example of MLE of Exponential Distribution</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -349,73 +335,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="maximum-likelihood-estimation">
-<h1>Maximum Likelihood Estimation<a class="headerlink" href="#maximum-likelihood-estimation" title="Permalink to this heading">#</a></h1>
-<section id="theory">
-<h2>1. Theory<a class="headerlink" href="#theory" title="Permalink to this heading">#</a></h2>
-<p>Maximum Likelihood Estimation (MLE) is a statistical method used to estimate the parameters of a probability distribution based on observed data <span class="math notranslate nohighlight">\(\mathbf{x} = x_1, x_2, ..., x_n\)</span>. Evaluating the joint density of the data given a parametric family <span class="math notranslate nohighlight">\(\theta\)</span> gives the likelihood function, which is a function that measures how well the observed data fits the probability distribution with the given parameters:</p>
-<p><span class="math notranslate nohighlight">\(L(\theta \mid \mathbf{x}) = f(\mathbf{x} \mid \theta) = \prod_{i=1}^{n} f(x_i \mid \theta)\)</span></p>
-<p>The goal of MLE is to find the values of the parameters that maximize the likelihood function. The maximum likelihood estimate <span class="math notranslate nohighlight">\(\hat{\theta}\)</span> is the set of parameters for which the observed data is the most probable with the assumed probability distribution:</p>
-<p><span class="math notranslate nohighlight">\(\hat{\theta} = \arg \max _{\theta} L(\theta \mid \mathbf{x})\)</span></p>
-<p>In practice, it is more common to use the log-likelihood, which is the natural logarithm of the likelihood function:</p>
-<p><span class="math notranslate nohighlight">\(\ln (L(\theta \mid \mathbf{x})) = \ln (\prod_{i=1}^{n} f(x_i \mid \theta))\)</span></p>
-<p>To find the maximum likelihood estimate <span class="math notranslate nohighlight">\(\hat{\theta}\)</span>, the following steps should be taken:</p>
-<ol class="arabic simple">
-<li><p>Define the likelihood function <span class="math notranslate nohighlight">\(L(\theta \mid \mathbf{x})\)</span>.</p></li>
-<li><p>Take natural logarithm of the likelihood function to get the log-likelihood function <span class="math notranslate nohighlight">\(\ln (L(\theta \mid \mathbf{x}))\)</span>.</p></li>
-<li><p>Differentiate the log-likelihood function and set it to zero: <span class="math notranslate nohighlight">\(\frac{\partial L(\theta \mid \mathbf{x})}{\partial \theta} = 0\)</span>.</p></li>
-<li><p>Solve the equation for <span class="math notranslate nohighlight">\(\hat{\theta}\)</span>.</p></li>
-</ol>
-<p>Note that the maximum can also occur at the boundary of the domain.</p>
-</section>
-<hr class="docutils" />
-<section id="exponential-distribution">
-<h2>2. Exponential Distribution<a class="headerlink" href="#exponential-distribution" title="Permalink to this heading">#</a></h2>
-<p>The exponential PDF is given by:</p>
-<p><span class="math notranslate nohighlight">\(f_X(x, \lambda) = \lambda e^{-\lambda x}\)</span> for <span class="math notranslate nohighlight">\(x&gt;0\)</span></p>
-<p>with <span class="math notranslate nohighlight">\(\lambda\)</span> being the parameter that has to be estimated. There dataset consists of <span class="math notranslate nohighlight">\(n\)</span> observations. Find the maximum likelihood estimate <span class="math notranslate nohighlight">\(\hat{\lambda}\)</span> following the four steps defined above:</p>
-<ol class="arabic simple">
-<li><p>Define the likelihood function <span class="math notranslate nohighlight">\(L(\lambda \mid \mathbf{x})\)</span>.</p></li>
-<li><p>Take natural logarithm of the likelihood function to get the log-likelihood function <span class="math notranslate nohighlight">\(\ln (L(\lambda \mid \mathbf{x}))\)</span>.</p></li>
-<li><p>Differentiate the log-likelihood function and set it to zero: <span class="math notranslate nohighlight">\(\frac{\partial L(\lambda \mid \mathbf{x})}{\partial \lambda} = 0\)</span>.</p></li>
-<li><p>Solve the equation for <span class="math notranslate nohighlight">\(\hat{\lambda}\)</span>.</p></li>
-</ol>
-<p><strong>1. Define the likelihood function <span class="math notranslate nohighlight">\(L(\lambda \mid \mathbf{x})\)</span>.</strong></p>
-<p>According to the definition, the likelihood function is given by:</p>
-<p><span class="math notranslate nohighlight">\(L(\lambda \mid \mathbf{x}) = \prod_{i=1}^{n} f(x_i \mid \lambda)\)</span></p>
-<p>For the exponential distribution, <span class="math notranslate nohighlight">\(f(x_i \mid \lambda) = \lambda e^{-\lambda x}\)</span>.</p>
-<p>Therefore, the likelihood function for the exponential distribution is given by:</p>
-<p><span class="math notranslate nohighlight">\(L(\lambda \mid \mathbf{x}) = \prod_{i=1}^{n} \lambda e^{-\lambda x_i} = \lambda^n e^{-\lambda \sum_{i=1}^{n} x_i} = \)</span></p>
-<p><strong>2. Take natural logarithm of the likelihood function to get the log-likelihood function <span class="math notranslate nohighlight">\(\ln (L(\lambda \mid \mathbf{x}))\)</span>.</strong></p>
-<p>Taking the natural logarithm of the likelihood function to obtain the log-likelihood function:</p>
-<p><span class="math notranslate nohighlight">\(\ln (L(\theta \mid \mathbf{x})) = \ln (\lambda^n e^{-\lambda \sum_{i=1}^{n} x_i} ) = n \ln (\lambda) -\lambda \sum_{i=1}^{n} x_i \)</span></p>
-<p><strong>3. Differentiate the log-likelihood function and set it to zero: <span class="math notranslate nohighlight">\(\frac{\partial L(\lambda \mid \mathbf{x})}{\partial \lambda} = 0\)</span></strong></p>
-<p>Taking the derivative of the log-likelihood function with respect to <span class="math notranslate nohighlight">\(\lambda\)</span> and setting it to zero:</p>
-<p><span class="math notranslate nohighlight">\(\frac{\partial \ln (L(\lambda \mid \mathbf{x}))}{\partial \lambda} = \frac{\partial (n \ln (\lambda) -\lambda \sum_{i=1}^{n} x_i )}{\partial \lambda} = \frac{n}{\hat \lambda} - \sum_{i=1}^{n} x_i = 0\)</span></p>
-<p><strong>4. Solve the equation for <span class="math notranslate nohighlight">\(\hat{\lambda}\)</span>.</strong></p>
-<p>We have the following equation to solve:</p>
-<p><span class="math notranslate nohighlight">\(\frac{n}{\hat \lambda} - \sum_{i=1}^{n} x_i = 0\)</span></p>
-<p>which results in the maximum likelihood estimate:</p>
-<p><span class="math notranslate nohighlight">\(\hat \lambda = \frac{n}{\sum_{i=1}^{n} x_i} = \frac{1}{\bar x}\)</span></p>
-<p>where <span class="math notranslate nohighlight">\(\bar x = \frac{\sum_{i=1}^{n} x_i}{n}\)</span> is the sample mean of the obsrved data.</p>
-<p>This means that the maximum likelihood estimate of the exponential distribution is the inverse of the sample mean.</p>
-</section>
-<hr class="docutils" />
-<section id="example-of-mle-of-exponential-distribution">
-<h2>3. Example of MLE of Exponential Distribution<a class="headerlink" href="#example-of-mle-of-exponential-distribution" title="Permalink to this heading">#</a></h2>
-<p>The following dataset describes the time elapsed between consecutive arrivals of passengers at a bus stop (in minutes):</p>
-<p><span class="math notranslate nohighlight">\(\mathbf{x} = [1.2, 0.5, 3.7, 2.3, 0.9, 1.5, 2.1, 3.0, 1.8, 2.5]\)</span></p>
-<p>Assume that the observations can be described by the exponential distribution, for which the PDF is given by:</p>
-<p><span class="math notranslate nohighlight">\(f_X(x, \lambda) = \lambda e^{-\lambda x}\)</span> for <span class="math notranslate nohighlight">\(x&gt;0\)</span></p>
-<p>with <span class="math notranslate nohighlight">\(\lambda\)</span> being the parameter that has to be estimated. Find the maximum likelihood estimate <span class="math notranslate nohighlight">\(\hat{\lambda}\)</span> following the four steps defined above:</p>
-<ol class="arabic simple">
-<li><p>Define the likelihood function <span class="math notranslate nohighlight">\(L(\lambda \mid \mathbf{x})\)</span>.</p></li>
-<li><p>Take natural logarithm of the likelihood function to get the log-likelihood function <span class="math notranslate nohighlight">\(\ln (L(\lambda \mid \mathbf{x}))\)</span>.</p></li>
-<li><p>Differentiate the log-likelihood function and set it to zero: <span class="math notranslate nohighlight">\(\frac{\partial L(\lambda \mid \mathbf{x})}{\partial \lambda} = 0\)</span>.</p></li>
-<li><p>Solve the equation for <span class="math notranslate nohighlight">\(\hat{\lambda}\)</span>.</p></li>
-</ol>
-</section>
-</section>
+  <section class="tex2jax_ignore mathjax_ignore" id="bug-report-issue-form-optional">
+<h1>Bug Report Issue Form (optional)<a class="headerlink" href="#bug-report-issue-form-optional" title="Permalink to this heading">#</a></h1>
+<p>Thank you for taking the time to provide feedback on the course. Your bug reports are valuable in helping us identify and address any issues to improve the course for future students.</p>
+<p>If desired, please fill out the following form to report any bugs or technical issues you encountered during this module. Your answers will be kept confidential unless you specify otherwise.</p>
+<p>Please note that questions marked with a red asterisk (<span style="color:red">*</span>) are mandatory.</p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdBIiXzrICmXA5AS0RnXGm8VBAspyVDEnbk8HYq9-6pE12nyg/viewform?embedded=true&entry.773889902=4. Maximum Likelihood Estimation" width="720" height="1080" frameborder="0" marginheight="0" marginwidth="0">Laden…</iframe></section>
 
     <script type="text/x-thebe-config">
     {
@@ -449,20 +374,20 @@ document.write(`
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../section_03/bug_report.html"
+       href="MLE_2.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Bug Report Issue Form (optional)</p>
+        <p class="prev-next-title">Maximum Likelihood Estimation 2</p>
       </div>
     </a>
     <a class="right-next"
-       href="MLE_2.html"
+       href="independence%2Bconditional.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Maximum Likelihood Estimation 2</p>
+        <p class="prev-next-title">Independence and Conditioning</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -475,22 +400,6 @@ document.write(`
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#theory">1. Theory</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exponential-distribution">2. Exponential Distribution</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-of-mle-of-exponential-distribution">3. Example of MLE of Exponential Distribution</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
