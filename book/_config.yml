@@ -30,6 +30,7 @@ latex:
 html:
 #  announcement: "⚠️ This is not the final version of the book! The new version will be ready by July 1.⚠️"
   home_page_in_navbar: false
+  google_analytics_id: G-3M271KTT5T
   extra_navbar: |
       <div>
           <IMG SRC="https://raw.githubusercontent.com/mbakker7/exploratory_computing_with_python/master/tudelft_logo.png" WIDTH=200 ALIGN="center">
