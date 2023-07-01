@@ -33,10 +33,12 @@ parts:
   chapters:
   - file: new_prob_material/MLE_1
   - file: new_prob_material/MLE_2
+  - file: new_prob_material/bug_report_section_4.md
   
 - caption: 5. Joint, Independence and Conditional distributions 
   chapters:
   - file: new_prob_material/independence+conditional
+  - file: new_prob_material/bug_report_section_5.md
 - caption: End of course survey
   chapters:
   - file: End-of-course-survey.md 
