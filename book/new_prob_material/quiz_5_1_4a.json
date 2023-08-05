@@ -1,0 +1,15 @@
+[
+    {
+        "question": "What is the probability that X, representing the deflection of a structural element, is greater than or equal to 0.5 units given that Y, representing the applied load, is greater than or equal to 0.8 units?",
+        "type": "numeric",
+        "precision": 2,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.33,
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    }
+]

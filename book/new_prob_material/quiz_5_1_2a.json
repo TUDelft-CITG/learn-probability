@@ -1,0 +1,15 @@
+[
+    {
+        "question": "What is the probability that X is greater than 0.3 units given that Y is equal to 0.6 units?",
+        "type": "numeric",
+        "precision": 2,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.25,
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    }
+]

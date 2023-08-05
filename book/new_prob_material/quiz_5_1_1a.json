@@ -1,0 +1,15 @@
+[
+    {
+        "question": "What is the probability that the compressive strength X is less than or equal to 0.5 units (e.g. MPa) and the load Y is less than or equal to 0.7 units (e.g. kN)?",
+        "type": "numeric",
+        "precision": 3,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.654,
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    }
+]

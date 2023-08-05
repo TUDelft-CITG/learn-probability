@@ -1,0 +1,15 @@
+[
+    {
+        "question": "The maximum likelihood estimate is equal to:",
+        "type": "numeric",
+        "precision": 3,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.495,
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "question": "Is the given likelihood function correct? ",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "answer": "No",
+                "correct": true,
+                "feedback": "Correct!"
+            },
+            {
+                "answer": "Yes",
+                "correct": false,
+                "feedback": "False"
+            }
+            
+        ]
+    }
+]

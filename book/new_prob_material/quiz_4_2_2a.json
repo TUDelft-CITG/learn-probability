@@ -1,0 +1,15 @@
+[
+    {
+        "question": "The maximum likelihood estimate of the probability of a flawed observation based on the given data is approximately:",
+        "type": "numeric",
+        "precision": 3,
+        "answers": [
+            {
+                "type": "value",
+                "value": 0.09,
+                "correct": true,
+                "feedback": "Correct!"
+            }
+        ]
+    }
+]
