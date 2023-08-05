@@ -1,6 +1,6 @@
 [
     {
-        "question": "The maximum likelihood estimate of the probability of a flawed observation based on the given data is approximately:",
+        "question": "2. The maximum likelihood estimate of the probability of a flawed observation based on the given data is approximately:",
         "type": "numeric",
         "precision": 3,
         "answers": [

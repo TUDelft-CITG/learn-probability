@@ -1,6 +1,6 @@
 [
     {
-        "question": "What is the probability that X, representing the soil settlement, is greater than or equal to 0.4 units (e.g. mm) and Y, representing the applied surcharge, is less than or equal to 2 units (e.g. kPa)?",
+        "question": "The probability is equal to:",
         "type": "numeric",
         "precision": 2,
         "answers": [
